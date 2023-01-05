@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+     box-sizing: border-box;
+     font-family: 'Quicksand', sans-serif;
+     margin: 0;
+     padding: 0;
+}
+
+.flexRow{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-direction: row;
+     flex-wrap: wrap;
+}
+
+.logo{
+     width: 6rem;
+}
+
+.navigation{
+     width: 80rem;
+}
+
+.midias{
+     font-size: 1.2rem;
+     width: 10rem;
+}
+
+.nav-item a:hover{
+     transform: scale(1.1);
+     color: #ff4500 !important;
+     text-decoration: wavy;
+}
+
+.whoAre{
+     width: 100vw;
+     height: 90vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+}
+
+.author{
+     border-radius: 10px;
+}
+
+.photo{
+     width: 90px !important;
+     height: 90px !important;
+     border-radius: 50% !important;
+}
+
+.photo img{
+     width: 90%;
+     border-radius: 50% !important;
+}
+
+.midias i:hover{
+     color: #ff4500 !important;
+     cursor: pointer;
+     transform: scale(1.2);
+}
