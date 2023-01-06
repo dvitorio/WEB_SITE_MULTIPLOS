@@ -47,10 +47,6 @@ html{
      margin: 8vh auto !important;
 }
 
-.carrossel{
-     height: 100vh;
-}
-
 .services{
      width: 100vw;
      height: 70vh;
@@ -61,8 +57,8 @@ html{
 }
 
 .services p{
-     font-size: 1.2rem;
-     line-height: 40px;
+     font-size: 1.15rem;
+     line-height: 30px;
      width: 80vw;
 }
 
@@ -72,6 +68,34 @@ html{
 
 .sectionTitle h3{
      font-size: 2rem;
+}
+
+.directors{
+     background-color: #f5f5f5;
+     width: 100vw;
+     min-height: 100vh;
+}
+
+.director{
+     background-color: #ffffff;
+     min-width: 20vw;
+     min-height: fit-content;
+     border-radius: 10px;
+}
+
+.director h5{
+     font-size: 1.2rem;
+}
+
+.director h6{
+     font-size: 0.9rem;
+}
+
+.photo{
+     width: 90px;
+     height: 90px;
+     border-radius: 50%;
+     background-color: #f5f5f5;
 }
 
 .midias i:hover{
@@ -110,7 +134,15 @@ html{
           width: 95vw;
      }
      .formulario{
-          margin-top: -360px !important;
+          margin-top: 100px !important;
+     }
+     .directors{
+          display: block;
+          min-height: 100vh !important;
+          margin: 5vh auto;
+     }
+     .director{
+          width: 99vw !important;
      }
 }
 
