@@ -43,7 +43,8 @@ html{
 }
 
 .coverSite{
-     max-width: 85vw;
+     width: 50vw;
+     margin: 8vh auto !important;
 }
 
 .carrossel{
@@ -52,7 +53,7 @@ html{
 
 .services{
      width: 100vw;
-     height: 50vh;
+     height: 70vh;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -61,8 +62,8 @@ html{
 
 .services p{
      font-size: 1.2rem;
-     line-height: 50px;
-     width: 75vw;
+     line-height: 40px;
+     width: 80vw;
 }
 
 .services span{
@@ -88,7 +89,7 @@ html{
 
 
 /*Media queries para responsividade em dispositivos móveis*/
-@media screen and (min-width: 16rem) and (max-width: 36rem) {
+@media screen and (min-width: 16rem) and (max-width: 53rem) {
      .navigation{
           min-height: 9rem; 
      }
@@ -97,6 +98,9 @@ html{
      }
      .embed-responsive iframe{
           width: 100vw !important;
+     }
+     .coverSite{
+          width: 100vw;
      }
      .services{
           flex-direction: column;
@@ -109,3 +113,5 @@ html{
           margin-top: -360px !important;
      }
 }
+
+
