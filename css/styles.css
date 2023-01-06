@@ -14,13 +14,17 @@ html{
 .flexRow{
      display: flex;
      align-items: center;
-     justify-content: space-around;
+     justify-content: center;
      flex-direction: row;
      flex-wrap: wrap;
 }
 
 .logo{
      width: 6rem;
+}
+
+.navbar{
+     background-color: #000000;
 }
 
 .navigation{
@@ -34,36 +38,39 @@ html{
 
 .nav-item a:hover{
      transform: scale(1.1);
-     color: #ff4500 !important;
+     color: #000000 !important;
      text-decoration: wavy;
+}
+
+.coverSite{
+     max-width: 85vw;
 }
 
 .carrossel{
      height: 100vh;
 }
 
-.whoAre{
+.services{
      width: 100vw;
-     height: 90vh;
+     height: 50vh;
      display: flex;
      align-items: center;
      justify-content: center;
-     flex-wrap: wrap;
+     flex-direction: column;
 }
 
-.author{
-     border-radius: 10px;
+.services p{
+     font-size: 1.2rem;
+     line-height: 50px;
+     width: 75vw;
 }
 
-.photo{
-     width: 90px !important;
-     height: 90px !important;
-     border-radius: 50% !important;
+.services span{
+     font-size: 3rem;
 }
 
-.photo img{
-     width: 90%;
-     border-radius: 50% !important;
+.sectionTitle h3{
+     font-size: 2rem;
 }
 
 .midias i:hover{
@@ -74,7 +81,7 @@ html{
 
 .formulario{
      background-color: rgb(241, 243, 246);
-     height: 80vh;
+     height: auto;
 }
 
 
@@ -88,11 +95,17 @@ html{
      .midias{
           visibility: hidden;
      }
-     .coverSite{
-          width: 100%;
-          height: 35vh;
+     .embed-responsive iframe{
+          width: 100vw !important;
      }
-     .coverSite img{
-          height: 35vh;
+     .services{
+          flex-direction: column;
+          height: auto;
+     }
+     .services p{
+          width: 95vw;
+     }
+     .formulario{
+          margin-top: -360px !important;
      }
 }
