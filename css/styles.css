@@ -44,12 +44,23 @@ html{
 
 .coverSite{
      width: 50vw;
+     max-height: 100vh !important;
      margin: 8vh auto !important;
+}
+
+.historic{
+     width: 100vw;
+     min-height: 100vh;
+}
+
+.historicPhoto img{
+     width: 100%;
+     border-radius: 10px;
 }
 
 .services{
      width: 100vw;
-     height: 70vh;
+     min-height: 100vh;
      display: flex;
      align-items: center;
      justify-content: center;
@@ -79,7 +90,7 @@ html{
 .director{
      background-color: #ffffff;
      min-width: 20vw;
-     min-height: fit-content;
+     min-height: 32rem;
      border-radius: 10px;
 }
 
@@ -103,7 +114,8 @@ html{
      border-radius: 50%;
 }
 
-.midias i:hover{
+.midias i:hover, 
+.midiasDirector i:hover{
      color: #ff4500 !important;
      cursor: pointer;
      transform: scale(1.2);
@@ -148,6 +160,9 @@ html{
      }
      .director{
           width: 99vw !important;
+     }
+     .historicPhoto img{
+          width: 100vw;
      }
 }
 
