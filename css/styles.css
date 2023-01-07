@@ -4,6 +4,10 @@ html{
      scroll-behavior: smooth;
 }
 
+body{
+     background-color: #f5f5f5;
+}
+
 *{
      box-sizing: border-box;
      font-family: 'Quicksand', sans-serif;
@@ -50,7 +54,13 @@ html{
 
 .historic{
      width: 100vw;
+     background-color: #ffffff;
      min-height: 100vh;
+}
+
+.historicPhoto{
+     max-width: 45vw;
+     max-height: 45vh;
 }
 
 .historicPhoto img{
@@ -121,10 +131,28 @@ html{
      transform: scale(1.2);
 }
 
+.partnersEnterprises{
+     background-color: #ffffff;
+     border-radius: 8px !important;
+     width: 100vw;
+     min-height: 85vh;
+}
+
+.enterprise{
+     border-radius: 8px !important;
+     max-width: 200px;
+}
+
+.enterprise img{
+     width: 100%;
+}
+
 .formulario{
      background-color: rgb(241, 243, 246);
      height: auto;
 }
+
+
 
 
 
@@ -161,8 +189,9 @@ html{
      .director{
           width: 99vw !important;
      }
-     .historicPhoto img{
-          width: 100vw;
+     .historicPhoto{
+          max-width: 100vw;
+          margin: 2vh auto;
      }
 }
 
