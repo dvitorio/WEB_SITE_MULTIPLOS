@@ -108,7 +108,7 @@ body{
 .director{
      background-color: #ffffff;
      min-width: 20vw;
-     min-height: 32rem;
+     max-height: 32rem;
      border-radius: 10px;
 }
 
@@ -117,6 +117,10 @@ body{
 }
 
 .director h6{
+     font-size: 0.9rem;
+}
+
+.director p{
      font-size: 0.9rem;
 }
 
