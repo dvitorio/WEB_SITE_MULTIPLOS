@@ -108,7 +108,7 @@ body{
 .director{
      background-color: #ffffff;
      min-width: 20vw;
-     max-height: 32rem;
+     height: 30rem;
      border-radius: 10px;
 }
 
@@ -227,6 +227,8 @@ footer{
      }
      .director{
           width: 99vw !important;
+          height: fit-content;
+          padding-bottom: 15px;
      }
      .historicPhoto{
           max-width: 100vw;
