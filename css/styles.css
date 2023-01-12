@@ -134,6 +134,7 @@ body{
 .photo img{
      width: 100%;
      border-radius: 50%;
+     overflow-x: hidden;
 }
 
 .midias i:hover, 
