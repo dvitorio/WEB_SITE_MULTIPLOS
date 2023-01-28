@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+     box-sizing: border-box;
+     font-family: 'Quicksand', sans-serif;
+     margin: 0;
+     padding: 0;
+     text-decoration: none !important;
+}
+
+.centerRow{
+     align-items: center;
+     display: flex;
+     justify-content: center;
+}
+
+.radius{
+     border-radius: 10px;
+}
+
+body{background-color: #f0ebeb}
+
+.container-geral{
+     min-height: 100vh !important;
+     width: 100vw !important;
+}
+
+.brand, 
+.menu,
+.midias{
+     background-color: #ffffff;
+}
+
+.menu a:hover{
+     color: #6e1818 !important;
+     transform: scale(1.1);
+}
+
+.firstPage{
+     height: 90vh;
+}
+
+.history{
+     min-height: 100vh;
+}
+
+.historyImage{
+     height: 45vh;
+}
+
+.historyImage img{
+     width: 100%;
+}
+
+.historyText p{line-height: 35px}
+
+
+
+
+
+/*Responsividade*/
+@media screen and (min-width: 17rem) and(max-width: 45rem) {
+     .midias{
+          display: none;
+     }
+}
+
+
