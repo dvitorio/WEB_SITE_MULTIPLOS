@@ -17,7 +17,7 @@
   <!--FONTAWESOME-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -26,7 +26,7 @@
   <div class="container-general">
 
     <!--Barra de navegação-->
-    <div class="navigation mb-2">
+    <div class="navigation mb-2" id="navigation">
       <nav class="navbar navbar-expand-lg bg-white">
         <div class="container">
           <div class="brand">
@@ -43,19 +43,19 @@
                   <a class="nav-link mx-3" href="#">Início</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-3" href="#">História</a>
+                  <a class="nav-link mx-3" href="#history">História</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-3" href="#">Diretoria</a>
+                  <a class="nav-link mx-3" href="#directors">Diretoria</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-3" href="#">Projetos</a>
+                  <a class="nav-link mx-3" href="#projects">Projetos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-3" href="#">Parcerias</a>
+                  <a class="nav-link mx-3" href="#clients">Parcerias</a>
                 </li>
                 <li class="nav-item">
-                  <button class="btn btn-primary" href="#">Contate-nos!</button>
+                  <a class="btn btn-primary" href="#formulario" id="btnFormulario">Contate-nos!</a>
                 </li>
               </ul>
             </div>
@@ -70,8 +70,8 @@
     </div>
 
     <!--Seção de história da instituição-->
-    <div class="bg-white history">
-      <h3 class="p-3 text-center text-secondary">Nossa história</h3>
+    <div class="bg-white history shadow" id="history">
+      <h3 class="p-3 text-center text-secondary"><b>Nossa história</b></h3>
       <div class="row">
         <div class="col-xl-4 historyImage mb-3 mx-auto radius">
           <img class="d-block img mx-auto px-2 radius w-100" src="/img/grupUsinaCrato.jpg" alt="">
@@ -110,13 +110,16 @@
           <img class="d-block img px-2 radius w-100" src="/img/descendo 5.JPG" alt="">
         </div>
       </div>
+      <div class="col centerRow">
+        <a class="text-secondary mb-3" href="#navigation"><i class="fa-solid fa-angles-up"></i> Inicio</a>
+      </div>
     </div>
 
-
     <!--Seção da diretoria-->
-    <div class="bg-white directors my-3">
+    <div class="directors my-3" id="directors">
       <div class="col-xl-8 my-3 mx-auto">
-        <h3 class="pt-3 text-center text-secondary">Diretoria</h3>
+        <h3 class="pt-3 text-center text-secondary"><b>Diretoria</b></h3>
+        </h3>
       </div>
       <div class="row">
         <div class="border director col-sm-12 col-md-6 col-xl-3 mb-3 mx-auto radius shadow">
@@ -133,7 +136,8 @@
           </p>
           <div class="centerRow midiasDirector mb-3 mx-auto">
             <i class="fa-brands fa-facebook mx-2 text-secondary"></i>
-            <a href="https://www.instagram.com/vivianesilvamentora" target="_blanck"><i class="fa-brands fa-instagram mx-2 text-secondary"></i></a>
+            <a href="https://www.instagram.com/vivianesilvamentora" target="_blanck"><i
+                class="fa-brands fa-instagram mx-2 text-secondary"></i></a>
             <i class="fa-regular fa-envelope mx-2 text-secondary"></i>
           </div>
         </div>
@@ -181,13 +185,109 @@
           </p>
         </div>
       </div>
+      <div class="col centerRow">
+        <a class="text-secondary mb-3" href="#navigation"><i class="fa-solid fa-angles-up"></i> Inicio</a>
+      </div>
     </div>
 
     <!--Seção de empresas que já foram clientes-->
-    <div class="clients">
-      
+    <div class="bg-white clients my-3" id="clients">
+      <div class="col-xl-8 my-3 mx-auto">
+        <h3 class="pt-3 text-center text-secondary"><b>Já trabalhamos para</b></h3>
+      </div>
+      <div class="mt-5 row">
+        <div class="client col-sm-6 col-md-4 col-xl-3 centerColumn mt-3 mx-auto p-3 radius shadow">
+          <img src="/img/braskem.png" alt="">
+        </div>
+        <div class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
+          <img src="/img/mpba.png" alt="">
+        </div>
+        <div class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
+          <img src="/img/sesc.png" alt="">
+        </div>
+        <div class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
+          <img src="/img/cea.jpg" alt="">
+        </div>
+      </div>
+      <div class="mt-5 row">
+        <div class="client col-sm-6 col-md-4 col-xl-3 centerColumn mt-3 mx-auto p-3 radius shadow">
+          <img src="/img/mj.jpeg" alt="">
+        </div>
+        <div class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
+          <img src="/img/conder.png" alt="">
+        </div>
+        <div class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
+          <img src="/img/pmssa.jpeg" alt="">
+        </div>
+        <div class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
+          <img src="/img/riachuelo.png" alt="">
+        </div>
+      </div>
+      <div class="col centerRow mt-5">
+        <a class="text-secondary mb-3" href="#navigation"><i class="fa-solid fa-angles-up"></i> Inicio</a>
+      </div>
     </div>
 
+    <!--Seção de formulário de contato-->
+    <div class="formulario mb-3 mx-auto p-3 radius" id="formulario">
+      <div class="col-xl-6 mb-3 mx-auto">
+        <h3 class="pt-3 text-center text-secondary"><b>Entre em contato conosco</b></h3>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <label class="form-label text-secondary">Nome completo</label>
+          <input class="form-control mx-auto" type="text">
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 mb-3">
+            <label class="form-label text-secondary">Área de atuação</label>
+            <select class="dropdown form-control" name="" id="">
+              <option value="" selected disabled>Informe sua ocupação</option>
+              <option value="">Estudante</option>
+              <option value="">Profissional das artes</option>
+              <option value="">Empresário(a)</option>
+              <option value="">Outra categoria</option>
+            </select>
+          </div>
+          <div class="col-xl-8 mb-3">
+            <label class="form-label text-secondary">E-mail</label>
+            <input class="form-control mx-auto" type="email">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-8 mb-3">
+            <label class="form-label text-secondary">Assunto</label>
+            <input class="form-control" type="text">
+          </div>
+          <div class="col-xl-4">
+            <label class="form-label text-secondary">Telefone</label>
+            <input class="form-control" type="tel">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col mb-3">
+            <label class="form-label text-secondary">Informações extras</label>
+            <textarea class="form-control" id="" cols="30" rows="5"></textarea>
+          </div>
+        </div>
+        <button class="btn btn-primary mb-3">Enviar informações</button>
+      </div>
+      <div class="col centerRow">
+        <a class="text-secondary mb-3" href="#navigation"><i class="fa-solid fa-angles-up"></i> Inicio</a>
+      </div>
+    </div>
+
+
+
+    <!--Rodape-->
+    <footer class="footer">
+      <h6 class="pt-3 text-center text-white">Todos os direitos reservados. &copy; 2023</h6>
+      <h6 class="text-center text-white">Av. Tancredo Neves, nº 1189, Ed. Guimarães Trade, sala 1603, Caminho das
+        Árvores, CEP 41820-020 – Salvador/BA</h6>
+      <h6 class="text-center text-white">Desenvolvido por <a class="text-warning"
+          href="https://www.linkedin.com/in/danielvitorio/" target="_blanck">Daniel Vitorio</a></h6>
+    </footer>
   </div>
 
 
