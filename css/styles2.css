@@ -39,24 +39,40 @@ body{
      max-width: 100vw !important;
 }
 
-.brand, 
+.navigation,
+.navbar,
 .menu,
 .midias{
-     background-color: #ffffff;
+     background-color: #000000 !important;
 }
 
+.brand{width: 8rem}
+
 .menu a:hover{
-     color: #6e1818 !important;
+     color: #ffa500 !important;
      transform: scale(1.1);
 }
 
 #btnFormulario a:hover{
+     color: white !important;
      text-decoration: none !important;
 }
 
 .firstPage{
      width: 100vw;
      height: 90vh;
+}
+
+.fpVideo,
+.fpText{max-height: 75vh}
+
+.fpVideo video{width: 55vw}
+
+.fpText{width: 40vw}
+
+.fpText h1{
+     font-size: 3rem;
+     line-height: 65px;
 }
 
 .history{
@@ -131,10 +147,10 @@ h6{font-size: 0.85rem}
      min-height: 80vh;
 }
 
-.footer{
+.rodape{
      width: 100vw;
-     margin: 0 auto;
-     background-color: rgba(128, 128, 128, 0.636);
+     height: 8rem;
+     background-color: #000000;
 }
 
 
@@ -148,7 +164,7 @@ h6{font-size: 0.85rem}
           display: none;
      }
      .director{
-          width: 99vw !important;
+          width: 100vw !important;
           height: auto;
      }
      .historyText p{
@@ -165,8 +181,23 @@ h6{font-size: 0.85rem}
      .formulario{
           width: 99vw;
      }
-
+     .firstPage{
+          height: auto;
+          padding-bottom: 30px;
+     }
+     .embed-responsive video{
+          width: 100vw;
+     }
+     .fpText h1{
+          font-size: 1.5rem;
+          line-height: 30px;
+     }
+     .fpText{
+          margin: 2vh auto;
+          width: 100vw !important;
+     }
 }
+
 
 @media screen and (min-width: 35.1rem) and (max-width: 67rem) {
      .director{
@@ -179,6 +210,23 @@ h6{font-size: 0.85rem}
      .formulario{
           width: 99vw;
      }
+     .firstPage{
+          height: auto;
+          padding-bottom: 30px;
+     }
+     .embed-responsive video{
+          width: 100vw;
+     }
+     .fpText{
+          margin: 2vh auto;
+          width: 100vw !important;
+     }
+
+     .fpText h1{
+          font-size: 1.5rem;
+          line-height: 30px;
+     }
+
 }
 
 
