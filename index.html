@@ -7,13 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Instituto Múltiplos</title>
   <!--CSS BOOTSTRAP-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <!--CSS-->
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css" defer>
+  <link rel="stylesheet" href="/css/styles_2.css" defer>
   <!--FONTAWESOME-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
@@ -33,17 +31,15 @@
         <div class="container">
           <div class="brand">
             <img class="d-block img mx-auto w-100" src="/img/logo.jpeg" alt="">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="bg-light my-3 navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
           <div class="menu">
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link mx-3 text-white" href="#">Início</a>
-                </li>
                 <li class="nav-item">
                   <a class="nav-link mx-3 text-white" href="#history">História</a>
                 </li>
@@ -71,11 +67,13 @@
       <div class="row">
         <div class="col-xl-7 fpVideo mt-5 mx-auto">
           <div class="embed-responsive embed-responsive-16by9 mb-5 mt-4">
-            <video data-aos="fade-left" data-aos-duration="1500" class="embed-responsive-item" src="/videos/multiplosPensamentos.mp4" controls autoplay muted></video>
+            <video data-aos="fade-left" data-aos-duration="1500" class="embed-responsive-item"
+              src="/videos/multiplosPensamentos.mp4" controls autoplay muted></video>
           </div>
         </div>
         <div class="centerColumn col-xl-4 fpText mt-3 mx-auto">
-          <h1 data-aos="fade-up" data-aos-duration="1500" class="text-center text-secondary">Venha nos conhecer e participar de uma verdadeira revolução cultural e artística </h1>
+          <h1 data-aos="fade-up" data-aos-duration="1500" class="text-center text-secondary">Venha nos conhecer e
+            participar de uma verdadeira revolução cultural e artística </h1>
         </div>
       </div>
     </div>
@@ -88,7 +86,8 @@
           <img class="d-block img mx-auto px-2 radius w-100" src="/img/grupUsinaCrato.jpg" alt="">
         </div>
         <div class="col-xl-8 historyText mb-3 mx-auto radius">
-          <p data-aos="fade-up" class="px-2 text-secondary">Inicialmente, o instituto <b>Múltiplos</b> foi criado em 2005 com o nome
+          <p data-aos="fade-up" class="px-2 text-secondary">Inicialmente, o instituto <b>Múltiplos</b> foi criado em
+            2005 com o nome
             <b>Grupusina de Arte e Cultura</b>, e visava dar representação
             jurídica ao grupo teatral que levava o mesmo nome, além de auxiliar outros coletivos artísticos com
             projetos,
@@ -122,9 +121,10 @@
         </div>
       </div>
       <div data-aos="fade-up" class="col centerRow">
-        <a class="text-secondary mb-3" href="#navigation"><i class="fa-solid fa-angles-up"></i> Inicio</a>
+        <a class="text-secondary mb-3" href="#navigation"><i class="fa-solid fa-angles-up"></i></a>
       </div>
     </div>
+
 
     <!--Seção da diretoria-->
     <div class="directors my-3" id="directors">
@@ -133,17 +133,38 @@
         </h3>
       </div>
       <div class="row">
-        <div data-aos="fade-up" data-aos-duration="2000" class="border director col-sm-12 col-md-6 col-xl-3 mb-3 mx-auto radius shadow">
+        <div data-aos="fade-up" data-aos-duration="2000"
+          class="border director col-sm-12 col-md-6 col-xl-3 mb-3 mx-auto radius shadow">
           <div class="photoDirector my-3 mx-auto">
             <img class="d-block img mx-auto" src="/img/vivi.jpeg" alt="">
           </div>
           <h5 class="text-center text-secondary"><b>Vivi Silva</b></h5>
           <h6 class="text-center text-secondary">Empresária e mentora de autoajuda</h6>
-          <p data-aos="fade-up" data-aos-duration="2500" class="p-2 text-center text-secondary">
+          <p data-aos="fade-up" data-aos-duration="2000" class="p-2 text-center text-secondary">
             Viviane Silva é Coach, acadêmica em administração, empresária, mentora e especialista em análise de perfil
-            comportamental. Atualmente desenvolve programas comportamentais, e já mentorou mais de 500 clientes.
+            comportamental. Desenvolve programas comportamentais e mentorou mais de 500 clientes.
             Palestrante e coordenadora de programas profissionalizantes, atuou como professora, treinadora e consultora
             para empreendedores.
+          </p>
+          <div class="centerRow midiasDirector mb-3 mx-auto">
+            <i class="fa-brands fa-facebook mx-2 text-dark"></i>
+            <a href="https://www.instagram.com/vivianesilvamentora" target="_blanck"><i
+                class="fa-brands fa-instagram mx-2 text-dark"></i></a>
+            <i class="fa-regular fa-envelope mx-2 text-dark"></i>
+          </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-duration="2000"
+          class="border director col-sm-12 col-md-6 col-xl-3 mb-3 mx-auto radius shadow">
+          <div class="photoDirector my-3 mx-auto">
+            <img class="d-block img mx-auto" src="/img/matos.jpg" alt="">
+          </div>
+          <h5 class="text-center text-secondary"><b>Matos de Matos</b></h5>
+          <h6 class="text-center text-secondary">Profesor e Gestor</h6>
+          <p data-aos="fade-up" data-aos-duration="2000" class="p-2 text-center text-secondary">
+            Matos De Matos é Professor, Administrador e Gestor Público. Possui MBA em Gestão Executiva e Pós-graduação
+            em Metodologia do Ensino Superior. Já trabalhou em diversas empresas privadas e órgãos públicos, e atualmente
+            exerce função de palestrante e consultor, além de ministrar diversos cursos sobre Gestão Empresarial.
           </p>
           <div class="centerRow midiasDirector mb-3 mx-auto">
             <i class="fa-brands fa-facebook mx-2 text-secondary"></i>
@@ -153,51 +174,30 @@
           </div>
         </div>
 
-        <div data-aos="fade-up" data-aos-duration="2000" class="border director col-sm-12 col-md-6 col-xl-3 mb-3 mx-auto radius shadow">
-          <div class="photoDirector my-3 mx-auto">
-            <img class="d-block img mx-auto" src="/img/matos.jpg" alt="">
-          </div>
-          <h5 class="text-center text-secondary"><b>Matos de Matos</b></h5>
-          <h6 class="text-center text-secondary">Profesor e Gestor</h6>
-          <p data-aos="fade-up" data-aos-duration="2500" class="p-2 text-center text-secondary">
-            Matos De Matos é Professor, Administrador e Gestor Público. Possui MBA em Gestão Executiva e Pós-graduadação
-            em Metodologia do Ensino. <br />Já trabalhou em diversas empresas privadas e órgãos públicos. Atualmente
-            exerce
-            função de palestrante e consultor.
-          </p>
-        </div>
-
-        <div data-aos="fade-up" data-aos-duration="2000" class="border director col-sm-12 col-md-6 col-xl-3 mb-3 mx-auto radius shadow">
+        <div data-aos="fade-up" data-aos-duration="2000"
+          class="border director col-sm-12 col-md-6 col-xl-3 mb-3 mx-auto radius shadow">
           <div class="photoDirector my-3 mx-auto">
             <img class="d-block img mx-auto" src="/img/uarlen2.jpeg" alt="">
           </div>
           <h5 class="text-center text-secondary"><b>Uarlen Becker</b></h5>
           <h6 class="text-center text-secondary">Escritor, artista e professor</h6>
-          <p data-aos="fade-up" data-aos-duration="2500" class="p-2 text-center text-secondary">
+          <p data-aos="fade-up" data-aos-duration="2000" class="p-2 text-center text-secondary">
             Uarlen Becker é Bacharel em Artes Cênicas e Licenciado em História. É ator e diretor
             de teatro, escritor e um dos administradores do Instituto Múltiplos desde sua criação. Possui cerca de
             12 espetáculos encenados, 3 filmes de sua autoria e 7 livros publicados. Destaques: Um plano para matar
             Michel
             (2018) e E seus meus pais soubessem? (2022).
           </p>
-        </div>
-
-        <div data-aos="fade-up" data-aos-duration="2000" class="border director col-sm-12 col-md-6 col-xl-3 mb-3 mx-auto radius shadow">
-          <div class="photoDirector my-3 mx-auto">
-            <img class="d-block img mx-auto" src="/img/lucas.jpeg" alt="">
+          <div class="centerRow midiasDirector mb-3 mx-auto">
+            <i class="fa-brands fa-facebook mx-2 text-secondary"></i>
+            <a href="https://www.instagram.com/vivianesilvamentora" target="_blanck"><i
+                class="fa-brands fa-instagram mx-2 text-secondary"></i></a>
+            <i class="fa-regular fa-envelope mx-2 text-secondary"></i>
           </div>
-          <h5 class="text-center text-secondary"><b>Lucas Arruda</b></h5>
-          <h6 class="text-center text-secondary">Artista</h6>
-          <p data-aos="fade-up" data-aos-duration="2500" class="p-2 text-center text-secondary">
-            Lucas Arruda, 24 anos, ator, e cursa Teatro pela UFBA.
-            Atuou nos espetáculos “Em Busca de Oz” (Vitor Alves, diretor), “Macbeth Animal” e “Bordô”, dirigido por
-            Gabriel Nascimento e na produção do espetáculo "Os cavalos comem repolho com manteiga defumada" de (2020),
-            e do filme "E se meus pais soubessem?"(2022), ambos com direção de Uarlen Becker.
-          </p>
         </div>
       </div>
       <div class="col centerRow">
-        <a class="text-secondary mb-3" href="#navigation"><i class="fa-solid fa-angles-up"></i> Inicio</a>
+        <a class="text-secondary mb-3" href="#navigation"><i class="fa-solid fa-angles-up"></i></a>
       </div>
     </div>
 
@@ -207,107 +207,154 @@
         <h3 class="pt-3 text-center text-secondary"><b>Já trabalhamos para</b></h3>
       </div>
       <div class="mt-5 row">
-        <div data-aos="zoom-in-up" data-aos-duration="2000" class="client col-sm-6 col-md-4 col-xl-3 centerColumn mt-3 mx-auto p-3 radius shadow">
-          <img src="/img/braskem.png" alt="">
+        <div data-aos="zoom-in-up" data-aos-duration="2000"
+          class="client col-sm-6 col-md-4 col-xl-3 centerColumn mt-3 mx-auto p-3 radius shadow">
+          <img class="d-block img" src="/img/braskem.png" alt="">
         </div>
-        <div data-aos="zoom-in-up" data-aos-duration="2000" class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
-          <img src="/img/mpba.png" alt="">
+        <div data-aos="zoom-in-up" data-aos-duration="2000"
+          class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
+          <img class="d-block img" src="/img/mpba.png" alt="">
         </div>
-        <div data-aos="zoom-in-up" data-aos-duration="2000" class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
-          <img src="/img/sesc.png" alt="">
+        <div data-aos="zoom-in-up" data-aos-duration="2000"
+          class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
+          <img class="d-block img" src="/img/sesc.png" alt="">
         </div>
-        <div data-aos="zoom-in-up" data-aos-duration="2000" class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
-          <img src="/img/cea.jpg" alt="">
+        <div data-aos="zoom-in-up" data-aos-duration="2000"
+          class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
+          <img class="d-block img" src="/img/cea.jpg" alt="">
         </div>
       </div>
       <div class="mt-5 row">
-        <div data-aos="zoom-in-up" data-aos-duration="2000" class="client col-sm-6 col-md-4 col-xl-3 centerColumn mt-3 mx-auto p-3 radius shadow">
-          <img src="/img/mj.jpeg" alt="">
+        <div data-aos="zoom-in-up" data-aos-duration="2000"
+          class="client col-sm-6 col-md-4 col-xl-3 centerColumn mt-3 mx-auto p-3 radius shadow">
+          <img class="d-block img" src="/img/mj.jpeg" alt="">
         </div>
-        <div data-aos="zoom-in-up" data-aos-duration="2000" class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
-          <img src="/img/conder.png" alt="">
+        <div data-aos="zoom-in-up" data-aos-duration="2000"
+          class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
+          <img class="d-block img" src="/img/conder.png" alt="">
         </div>
-        <div data-aos="zoom-in-up" data-aos-duration="2000" class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
-          <img src="/img/pmssa.jpeg" alt="">
+        <div data-aos="zoom-in-up" data-aos-duration="2000"
+          class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
+          <img class="d-block img" src="/img/pmssa.jpeg" alt="">
         </div>
-        <div data-aos="zoom-in-up" data-aos-duration="2000" class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
-          <img src="/img/riachuelo.png" alt="">
+        <div data-aos="zoom-in-up" data-aos-duration="2000"
+          class="client col-sm-6 col-md-4 col-xl-3 centerColumn flexRow mt-3 mx-auto p-3 radius shadow">
+          <img class="d-block img" src="/img/riachuelo.png" alt="">
         </div>
       </div>
       <div class="col centerRow mt-5">
-        <a class="text-secondary mb-3" href="#navigation"><i class="fa-solid fa-angles-up"></i> Inicio</a>
+        <a class="text-secondary mb-3" href="#navigation"><i class="fa-solid fa-angles-up"></i></a>
+      </div>
+    </div>
+
+    <!--Seção de tarefas-->
+    <div class="d-none mb-3 tasks">
+      <div class="col-xl-8 my-3 mx-auto">
+        <h3 class="pt-3 text-center text-secondary"><b>Quem somos</b></h3>
+      </div>
+      <div class="bg-white mb-2 mx-auto px-3 rounded shadow task">
+        <p class="mx-auto text-center text-secondary">
+          Somos um instituto criado em 2005 com histórico de produção cultural, formação profissional, treinamento,
+          mentoria, elaboração e execução de projetos, consultoria, assessoria, desenvolvimento pessoal e empresarial.
+        </p>
+      </div>
+      <div class="bg-white mb-2 mx-auto px-3 rounded shadow task">
+        <h4 class="my-3 text-center text-secondary">O que fazemos</h4>
+        <p class="mx-auto text-center text-secondary">
+          Através de um pré-diagnóstico ofertamos serviços que visam minimizar danos, prejuízos e descasos.
+        </p>
+      </div>
+      <div class="bg-white mb-2 mx-auto px-3 rounded shadow task">
+        <h4 class="my-3 text-center text-secondary">O que ofertamos</h4>
+        <p class="mx-auto text-center text-secondary">
+          Nosso instituto oferece excelência profissional através de cursos, oficinas, palestras, mentorias, seminários,
+          consultorias, treinamento, planejamento, cliente oculto, assessoria, DNA organizacional, arquitetura de cargos
+          e elaboração de projetos culturais nas áreas de teatro, dança, música, literatura e demais manifestações
+          artísticas.
+        </p>
+      </div>
+      <div class="bg-white mb-2 mx-auto px-3 rounded shadow task">
+        <h4 class="my-3 text-center text-secondary">O que entregamos</h4>
+        <p class="mx-auto text-center text-secondary">
+          Melhor desempenho e qualidade na produtividade; desenvolvimento de técnicas que melhoram a eficiência;
+          minimização de conflitos através de diagnósticos; desmistificação do papel do patrão/chefe; comunicação
+          dinâmica e objetiva, motivação e proatividade.
+        </p>
       </div>
     </div>
 
     <!--Seção de formulário de contato-->
-    <div data-aos="fade-up" data-aos-duration="3000" class="formulario mb-3 mx-auto p-3 radius" id="formulario">
-      <div class="col-xl-6 mb-3 mx-auto">
-        <h3 class="pt-3 text-center text-secondary"><b>Entre em contato conosco</b></h3>
+    <div data-aos="fade-up" data-aos-duration="2000" class="formulario mb-3 mx-auto p-3 radius" id="formulario">
+      <div class="col mb-3 mx-auto">
+        <h3 class="pt-3 text-center text-secondary"><b>Entre em contato conosco preenchendo aqui</b></h3>
       </div>
       <div class="row">
         <div class="col mb-3">
           <label class="form-label text-secondary">Nome completo</label>
           <input class="form-control mx-auto" type="text">
         </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-4 mb-3">
-            <label class="form-label text-secondary">Área de atuação</label>
-            <select class="dropdown form-control" name="" id="">
-              <option value="" selected disabled>Informe sua ocupação</option>
-              <option value="">Estudante</option>
-              <option value="">Profissional das artes</option>
-              <option value="">Empresário(a)</option>
-              <option value="">Outra categoria</option>
-            </select>
-          </div>
-          <div class="col-xl-8 mb-3">
-            <label class="form-label text-secondary">E-mail</label>
-            <input class="form-control mx-auto" type="email">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-8 mb-3">
-            <label class="form-label text-secondary">Assunto</label>
-            <input class="form-control" type="text">
-          </div>
-          <div class="col-xl-4">
-            <label class="form-label text-secondary">Telefone</label>
-            <input class="form-control" type="tel">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col mb-3">
-            <label class="form-label text-secondary">Informações extras</label>
-            <textarea class="form-control" id="" cols="30" rows="5"></textarea>
-          </div>
-        </div>
-        <button class="btn btn-primary mb-3">Enviar informações</button>
       </div>
-      <div class="col centerRow">
-        <a class="text-secondary mb-3" href="#navigation"><i class="fa-solid fa-angles-up"></i> Inicio</a>
+      <div class="row">
+        <div class="col-xl-4 mb-3">
+          <label class="form-label text-secondary">Área de atuação</label>
+          <select class="dropdown form-control" name="" id="">
+            <option value="" selected disabled>Informe sua ocupação</option>
+            <option value="">Estudante</option>
+            <option value="">Profissional das artes</option>
+            <option value="">Empresário(a)</option>
+            <option value="">Outra categoria</option>
+          </select>
+        </div>
+        <div class="col-xl-8 mb-3">
+          <label class="form-label text-secondary">E-mail</label>
+          <input class="form-control mx-auto" type="email">
+        </div>
       </div>
+      <div class="row">
+        <div class="col-xl-8 mb-3">
+          <label class="form-label text-secondary">Assunto</label>
+          <input class="form-control" type="text">
+        </div>
+        <div class="col-xl-4">
+          <label class="form-label text-secondary">Telefone</label>
+          <input class="form-control" type="tel">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col mb-3">
+          <label class="form-label text-secondary">Informações extras</label>
+          <textarea class="form-control" id="" cols="30" rows="5"></textarea>
+        </div>
+      </div>
+      <button class="btn btn-primary mb-3">Enviar informações</button>
     </div>
+    <div class="col centerRow">
+      <a class="text-secondary mb-3" href="#navigation"><i class="fa-solid fa-angles-up"></i></a>
+    </div>
+  </div>
 
 
 
-    <!--Rodape-->
-    <footer class="centerColumn rodape">
-      <h6 class="pt-3 text-center text-white">Todos os direitos reservados. &copy; 2023</h6>
-      <h6 class="text-center text-white">Av. Tancredo Neves, nº 1189, Ed. Guimarães Trade, sala 1603, Caminho das
-        Árvores, CEP 41820-020 – Salvador/BA</h6>
-      <h6 class="text-center text-white">Desenvolvido por <a class="text-warning"
-          href="https://www.linkedin.com/in/danielvitorio/" target="_blanck">Daniel Vitorio</a></h6>
-    </footer>
+  <!--Rodape-->
+  <footer class="centerColumn rodape">
+    <h6 class="pt-3 text-center text-white">Todos os direitos reservados. &copy; 2023</h6>
+    <h6 class="text-center text-white">Av. Tancredo Neves, nº 1189, Ed. Guimarães Trade, sala 1603, Caminho das
+      Árvores, CEP 41820-020 – Salvador/BA</h6>
+    <h6 class="text-center text-white">Desenvolvido por <a class="text-warning"
+        href="https://www.linkedin.com/in/danielvitorio/" target="_blanck">Daniel Vitorio</a></h6>
+  </footer>
   </div>
 
 
   <!--JAVASCRIPT-->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
-    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
     crossorigin="anonymous"></script>
   <script src="/js/scripts.js"></script>
   <!--AOS JAVASCRIPT-->
