@@ -26,36 +26,23 @@
   <div class="container-general">
 
     <!--Barra de navegação-->
-    <div class="navigation mb-2" id="navigation">
-      <nav class="navbar navbar-expand-lg">
+    <div class="navigation" id="navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <div class="brand">
-            <img class="d-block img mx-auto w-100" src="/img/logo.jpeg" alt="">
-            <button class="bg-light my-3 navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-              aria-label="Toggle navigation">
+            <img class="d-block img mx-auto w-100" src="/img/logo.jpeg" alt="Logotipo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
-          <div class="menu">
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link mx-3 text-white" href="#history">História</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-3 text-white" href="#directors">Diretoria</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-3 text-white" href="#projects">Projetos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-3 text-white" href="#clients">Parcerias</a>
-                </li>
-                <li class="nav-item">
-                  <a class="btn btn-primary" href="#formulario" id="btnFormulario">Contate-nos!</a>
-                </li>
-              </ul>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="mx-5 nav-link active" id="home">Home</a>
+              <a class="mx-5 nav-link text-white" href="#directors">Equipe</a>
+              <a class="mx-5 nav-link text-white" href="#">Projetos</a>
+              <a class="mx-5 nav-link text-white" href="#clients">Parcerias</a>
+              <button class="btn btn-primary ml-5 nav-link text-white">Contate-nos!</button>
             </div>
           </div>
         </div>
@@ -63,73 +50,87 @@
     </div>
 
     <!--Página inicial do site-->
-    <div class="bg-white firstPage mb-3">
-      <div class="row">
-        <div class="col-xl-7 fpVideo mt-5 mx-auto">
-          <div class="embed-responsive embed-responsive-16by9 mb-5 mt-4">
-            <video data-aos="fade-left" data-aos-duration="1500" class="embed-responsive-item"
-              src="/videos/multiplosPensamentos.mp4" controls autoplay muted></video>
-          </div>
-        </div>
-        <div class="centerColumn col-xl-4 fpText mt-3 mx-auto">
-          <h1 data-aos="fade-up" data-aos-duration="1500" class="text-center text-secondary">Venha nos conhecer e
-            participar de uma verdadeira revolução cultural e artística </h1>
-        </div>
-      </div>
-    </div>
+    <section class="firstPage mb-3 pr-4 row">
+      <article class="col-xl-8 firstPageTitle text-white" data-aos="fade-right" data-aos-duration="1500">
+        <h1 class="h1 ml-3">Seja <span class="multiploTexto shadow text-danger">Múltiplo</span> você também!</h1>
+      </article>
+      <article class="col-xl-4 firstPageForm shadow text-white" data-aos="fade-left" data-aos-duration="1500">
+        <h5 class="my-3 text-center text-white">Conheça melhor nosssas propostas</h5>
+        <label class="form-label">Nome</label>
+        <input class="form-control mb-3" type="text">
+        <label class="form-label">E-mail</label>
+        <input class="form-control mb-3" type="email">
+        <section class="row">
+          <article class="col-xl-6">
+            <label class="form-label">Telefone</label>
+            <input class="form-control" type="email">
+          </article>
+          <article class="col-xl-6">
+            <label class="form-label text-white">Área de atuação</label>
+            <select class="dropdown form-control mb-2" name="" id="">
+              <option value="" selected disabled>Informe sua ocupação</option>
+              <option value="">Estudante</option>
+              <option value="">Profissional das artes</option>
+              <option value="">Empresário(a)</option>
+              <option value="">Outra categoria</option>
+            </select>
+          </article>
+        </section>
+        <button class="btn btn-block btn-danger my-3">Clique e saiba mais</button>
+      </article>
+    </section>
 
-    <!--Seção de história da instituição-->
-    <div class="bg-white history shadow" id="history">
-      <h3 class="p-3 text-center text-secondary"><b>Nossa história</b></h3>
-      <div class="row">
-        <div data-aos="fade-right" data-aos-duration="2500" class="col-xl-4 historyImage mb-3 mx-auto radius">
-          <img class="d-block img mx-auto px-2 radius w-100" src="/img/grupUsinaCrato.jpg" alt="">
+    <!--Seção de tarefas-->
+    <section class="border mb-3 tasks">
+      <article class="bg-white mb-2 mx-auto px-3 rounded shadow task">
+        <div class="taskImage mx-auto mt-3">
+          <img class="d-block img mx-auto" src="/img/team.png" alt="Icone do time">
         </div>
-        <div class="col-xl-8 historyText mb-3 mx-auto radius">
-          <p data-aos="fade-up" class="px-2 text-secondary">Inicialmente, o instituto <b>Múltiplos</b> foi criado em
-            2005 com o nome
-            <b>Grupusina de Arte e Cultura</b>, e visava dar representação
-            jurídica ao grupo teatral que levava o mesmo nome, além de auxiliar outros coletivos artísticos com
-            projetos,
-            editais e oficinas.
-          </p>
-          <p data-aos="fade-up" class="px-2 text-secondary">
-            Nesse período prestou serviços para empresas como SESC, C&A, Governo da Bahia e ganhou prêmios como
-            o Braskem de teatro em 2008 e do Ministério da Justiça em 2011 para encenar espetáculo de combate à
-            criminalidade.
-            Ao ampliar o raio de atuação na sociedade, focando também em qualificação profissional, mentorias e
-            consultorias,
-            e sob o nome <b>Múltiplos</b>, tem por meta se adequar à diversidade da sociedade e suas múltiplas
-            possibilidades.
-          </p>
+        <h4 class="pt-3 text-center text-secondary">Quem somos</h4>
+        <p class="mx-auto text-center text-secondary">
+          Somos um instituto criado em 2005 com histórico de produção cultural, formação profissional, treinamento,
+          mentoria, elaboração e execução de projetos, consultoria, assessoria, desenvolvimento pessoal e empresarial.
+        </p>
+      </article>
+      <article class="bg-white mb-2 mx-auto px-3 rounded shadow task">
+        <div class="taskImage mx-auto mt-3">
+          <img class="d-block img mx-auto" src="/img/tarefas.png" alt="Icone do time">
         </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-7 historyText mb-3 mx-auto radius">
-          <p data-aos="fade-up" class="px-2 text-secondary">
-            Além da atuação na área cultural e artística, o Instituto Múltiplos promove a qualificação profissional,
-            mentorias, palestras, atividades
-            formativas e consultorias. Acreditamos que a cultura - principalmente na esfera teatral - contribui para a
-            promoção de
-            cidadãos conscientes de seu papel transformador na sociedade, por isso, promovemos cada vez mais a inserção
-            de jovens nas
-            oficinas e projetos artísticos como estratégia de empoderamento cultural.
-          </p>
+        <h4 class="my-3 text-center text-secondary">O que fazemos</h4>
+        <p class="mx-auto text-center text-secondary">
+          Através de um pré-diagnóstico ofertamos serviços que visam minimizar danos, prejuízos e descasos.
+        </p>
+      </article>
+      <article class="bg-white mb-2 mx-auto px-3 rounded shadow task">
+        <div class="taskImage mx-auto mt-3">
+          <img class="d-block img mx-auto" src="/img/servicos.png" alt="Icone do time">
         </div>
-        <div data-aos="fade-left" data-aos-duration="2500" class="col-xl-5 historyImage mb-3 mx-auto radius">
-          <img class="d-block img px-2 radius w-100" src="/img/descendo 5.JPG" alt="">
+        <h4 class="my-3 text-center text-secondary">O que ofertamos</h4>
+        <p class="mx-auto text-center text-secondary">
+          Nosso instituto oferece excelência profissional através de cursos, oficinas, palestras, mentorias, seminários,
+          consultorias, treinamento, planejamento, cliente oculto, assessoria, DNA organizacional, arquitetura de cargos
+          e elaboração de projetos culturais nas áreas de teatro, dança, música, literatura e demais manifestações
+          artísticas.
+        </p>
+      </article>
+      <article class="bg-white mb-2 mx-auto px-3 rounded shadow task">
+        <div class="taskImage mx-auto mt-3">
+          <img class="d-block img mx-auto" src="/img/entregas.png" alt="Icone do time">
         </div>
-      </div>
-      <div data-aos="fade-up" class="col centerRow">
-        <a class="text-secondary mb-3" href="#navigation"><i class="fa-solid fa-angles-up"></i></a>
-      </div>
-    </div>
+        <h4 class="my-3 text-center text-secondary">O que entregamos</h4>
+        <p class="mx-auto text-center text-secondary">
+          Melhor desempenho e qualidade na produtividade; desenvolvimento de técnicas que melhoram a eficiência;
+          minimização de conflitos através de diagnósticos; desmistificação do papel do patrão/chefe; comunicação
+          dinâmica e objetiva, motivação e proatividade.
+        </p>
+      </article>
+    </section>
 
 
     <!--Seção da diretoria-->
     <div class="directors my-3" id="directors">
       <div class="col-xl-8 my-3 mx-auto">
-        <h3 class="pt-3 text-center text-secondary"><b>Diretoria</b></h3>
+        <h3 class="pt-3 text-center text-secondary"><b>Nossa equipe</b></h3>
         </h3>
       </div>
       <div class="row">
@@ -163,12 +164,13 @@
           <h6 class="text-center text-secondary">Profesor e Gestor</h6>
           <p data-aos="fade-up" data-aos-duration="2000" class="p-2 text-center text-secondary">
             Matos De Matos é Professor, Administrador e Gestor Público. Possui MBA em Gestão Executiva e Pós-graduação
-            em Metodologia do Ensino Superior. Já trabalhou em diversas empresas privadas e órgãos públicos, e atualmente
+            em Metodologia do Ensino Superior. Já trabalhou em diversas empresas privadas e órgãos públicos, e
+            atualmente
             exerce função de palestrante e consultor, além de ministrar diversos cursos sobre Gestão Empresarial.
           </p>
           <div class="centerRow midiasDirector mb-3 mx-auto">
             <i class="fa-brands fa-facebook mx-2 text-secondary"></i>
-            <a href="https://www.instagram.com/vivianesilvamentora" target="_blanck"><i
+            <a href="https://instagram.com/matosdematosx?igshid=MzRlODBiNWFlZA==" target="_blanck"><i
                 class="fa-brands fa-instagram mx-2 text-secondary"></i></a>
             <i class="fa-regular fa-envelope mx-2 text-secondary"></i>
           </div>
@@ -182,8 +184,8 @@
           <h5 class="text-center text-secondary"><b>Uarlen Becker</b></h5>
           <h6 class="text-center text-secondary">Escritor, artista e professor</h6>
           <p data-aos="fade-up" data-aos-duration="2000" class="p-2 text-center text-secondary">
-            Uarlen Becker é Bacharel em Artes Cênicas e Licenciado em História. É ator e diretor
-            de teatro, escritor e um dos administradores do Instituto Múltiplos desde sua criação. Possui cerca de
+            Uarlen Becker é Bacharel em Artes Cênicas e Licenciado em História. É artista de teatro, escritor e
+            um dos administradores do Instituto Múltiplos desde sua criação. Possui cerca de
             12 espetáculos encenados, 3 filmes de sua autoria e 7 livros publicados. Destaques: Um plano para matar
             Michel
             (2018) e E seus meus pais soubessem? (2022).
@@ -247,42 +249,6 @@
       </div>
     </div>
 
-    <!--Seção de tarefas-->
-    <div class="d-none mb-3 tasks">
-      <div class="col-xl-8 my-3 mx-auto">
-        <h3 class="pt-3 text-center text-secondary"><b>Quem somos</b></h3>
-      </div>
-      <div class="bg-white mb-2 mx-auto px-3 rounded shadow task">
-        <p class="mx-auto text-center text-secondary">
-          Somos um instituto criado em 2005 com histórico de produção cultural, formação profissional, treinamento,
-          mentoria, elaboração e execução de projetos, consultoria, assessoria, desenvolvimento pessoal e empresarial.
-        </p>
-      </div>
-      <div class="bg-white mb-2 mx-auto px-3 rounded shadow task">
-        <h4 class="my-3 text-center text-secondary">O que fazemos</h4>
-        <p class="mx-auto text-center text-secondary">
-          Através de um pré-diagnóstico ofertamos serviços que visam minimizar danos, prejuízos e descasos.
-        </p>
-      </div>
-      <div class="bg-white mb-2 mx-auto px-3 rounded shadow task">
-        <h4 class="my-3 text-center text-secondary">O que ofertamos</h4>
-        <p class="mx-auto text-center text-secondary">
-          Nosso instituto oferece excelência profissional através de cursos, oficinas, palestras, mentorias, seminários,
-          consultorias, treinamento, planejamento, cliente oculto, assessoria, DNA organizacional, arquitetura de cargos
-          e elaboração de projetos culturais nas áreas de teatro, dança, música, literatura e demais manifestações
-          artísticas.
-        </p>
-      </div>
-      <div class="bg-white mb-2 mx-auto px-3 rounded shadow task">
-        <h4 class="my-3 text-center text-secondary">O que entregamos</h4>
-        <p class="mx-auto text-center text-secondary">
-          Melhor desempenho e qualidade na produtividade; desenvolvimento de técnicas que melhoram a eficiência;
-          minimização de conflitos através de diagnósticos; desmistificação do papel do patrão/chefe; comunicação
-          dinâmica e objetiva, motivação e proatividade.
-        </p>
-      </div>
-    </div>
-
     <!--Seção de formulário de contato-->
     <div data-aos="fade-up" data-aos-duration="2000" class="formulario mb-3 mx-auto p-3 radius" id="formulario">
       <div class="col mb-3 mx-auto">
@@ -342,7 +308,7 @@
       Árvores, CEP 41820-020 – Salvador/BA</h6>
     <h6 class="text-center text-white">Desenvolvido por <a class="text-warning"
         href="https://www.linkedin.com/in/danielvitorio/" target="_blanck">Daniel Vitorio | (71) 98300-9859</a>
-      </h6>
+    </h6>
   </footer>
   </div>
 
