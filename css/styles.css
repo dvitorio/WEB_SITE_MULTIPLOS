@@ -91,6 +91,10 @@ header{
      text-align: center !important;
 }
 
+.firstPageTitle span{
+     color: #ffa500;
+}
+
 .firstPageForm{
      width: 24rem;
      min-height: 30rem;
@@ -115,11 +119,21 @@ h5{
 
 .tasks{
      width: 100vw;
-     min-height: 80vh !important;
+     min-height: 70vh !important;
      display: flex;
      align-items: start !important;
      justify-content: center;
      background-color: #ffffff !important;
+}
+
+.tasks h4,
+.directors h3, 
+.directors,
+.directors h4,
+.directors h5,
+.midiasDirector i,
+.clients h3{
+     color: #ffa500;
 }
 
 .task{
@@ -222,6 +236,12 @@ h6{font-size: 0.85rem}
           justify-content: center;
      }
 
+     .firstPageForm{
+          margin: auto;
+          padding: auto;
+          width: 95vw;
+     }
+
      .firstPageTitle h1{
           text-align: center;
           font-size: 2.5rem !important;
@@ -252,6 +272,12 @@ h6{font-size: 0.85rem}
      .firstPageTitle h1{
           text-align: center;
           font-size: 2.5rem !important;
+     }
+
+     .firstPageForm{
+          margin: auto;
+          padding: auto;
+          width: 95vw;
      }
 
      .firstPageCard{
@@ -287,6 +313,12 @@ h6{font-size: 0.85rem}
 
      .firstPageCard{
           width: 50vw;
+     }
+
+     .firstPageForm{
+          margin: auto;
+          padding: auto;
+          width: 95vw;
      }
 
      .director{
