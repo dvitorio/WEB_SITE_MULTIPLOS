@@ -112,6 +112,13 @@ h5{
      text-transform: uppercase;
 }
 
+.carousel-inner img {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     max-height: 720px;
+}
+
 #btnFormulario a:hover{
      color: #ffffff !important;
      text-decoration: none !important;
@@ -214,6 +221,7 @@ h6{font-size: 0.85rem}
 
 
 
+
 /*Responsividade*/
 @media screen and (max-width: 35rem) {
      .navbar-nav a,
@@ -245,6 +253,14 @@ h6{font-size: 0.85rem}
      .firstPageTitle h1{
           text-align: center;
           font-size: 2.5rem !important;
+     }
+
+     .carousel{
+          height: 90vh;
+     }
+
+     .carousel img{
+          height: 90%;
      }
 
      .directors{
