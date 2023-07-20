@@ -35,7 +35,7 @@ body{
 }
 
 header{
-     width: 100vw !important;
+     min-width: 100vw !important;
 }
 
 .container-geral{
@@ -108,8 +108,18 @@ header{
      text-transform: uppercase;
 }
 
+.historico{
+     width: 100vw;
+     height: 100vh;
+     background-color: #f5f5f5;
+}
+
 h5{
      text-transform: uppercase;
+}
+
+.carousel{
+     background-color: rgb(81, 83, 85);
 }
 
 .carousel-inner img {
