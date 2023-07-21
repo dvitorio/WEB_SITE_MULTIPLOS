@@ -25,7 +25,6 @@
 
   <!--Container geral do site-->
   <div class="container-general">
-
     <!--Barra de navegação-->
     <header class="navigation" id="navigation">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -42,7 +41,16 @@
               <a class="mx-3 nav-link active" id="home">Home</a>
               <a class="mx-3 nav-link text-white" href="#historico">Histórico</a>
               <a class="mx-3 nav-link text-white" href="#directors">Equipe</a>
-              <a class="mx-3 nav-link text-white" href="#">Projetos</a>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle text-white" type="button" data-toggle="dropdown" aria-expanded="false">
+                  Coletivos
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#modalGrupUsina">GrupUsina de Teatro</a>
+                  <a class="dropdown-item" href="#modalMaloka">Maloka Cine & Cia</a>
+                  <a class="dropdown-item" href="#modalMotivacional">Espaço Motivacional Viviane Silva</a>
+                </div>
+              </div>
               <a class="mx-3 nav-link text-white" href="#clients">Parcerias</a>
               <a class="mx-3 nav-link text-white" href="#blog">Nosso blog</a>
               <button class="btn btn-danger ml-5 nav-link text-white">Entrar em contato</button>
@@ -58,11 +66,11 @@
     </header>
 
     <!--Página inicial do site-->
-    <section class="firstPage mb-3 pr-4 row">
-      <article class="col-xl-8 firstPageTitle text-white" data-aos="fade-right" data-aos-duration="1500">
+    <section class="d-none firstPage mb-3 pr-4 row">
+      <article class="col-xl-8 d-none firstPageTitle text-white" data-aos="fade-right" data-aos-duration="1500">
         <h1 class="h1 ml-3 text">Seja <span class="multiploTexto shadow"><b>Múltiplo</b></span> você também!</h1>
       </article>
-      <article class="col-xl-3 firstPageForm shadow text-white" data-aos="fade-left" data-aos-duration="1500">
+      <article class="col-xl-3 d-none firstPageForm shadow text-white" data-aos="fade-left" data-aos-duration="1500">
         <h5 class="my-3 text-center text-white">Conheça melhor nosssas propostas</h5>
         <label class="form-label">Nome</label>
         <input class="form-control mb-3" type="text">
@@ -91,48 +99,94 @@
       </article>
     </section>
 
-    <!--Histórico-->
-    <div class="d-none historico row">
 
-    </div>
-
-    <!--Carrossel com fotos da equipe-->
-         
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <section id="myCarousel" class="carousel slide mb-3 pr-4 row" data-ride="carousel">
+      <article class="col-xl-3 firstPageForm shadow text-white">
+        <h5 class="my-3 text-center text-white">Conheça melhor nosssas propostas</h5>
+        <label class="form-label">Nome</label>
+        <input class="form-control mb-3" type="text">
+        <label class="form-label">E-mail</label>
+        <input class="form-control mb-3" type="email">
+        <section class="row">
+          <article class="col-xl-5">
+            <label class="form-label">Telefone</label>
+            <input class="form-control" type="email">
+          </article>
+          <article class="col-xl-7 mx-auto">
+            <label class="form-label text-white">Área de atuação</label>
+            <select class="dropdown form-control mb-2" name="" id="">
+              <option value="" selected disabled></option>
+              <option value="">Estudante</option>
+              <option value="">Profissional das artes</option>
+              <option value="">Empresário(a)</option>
+              <option value="">Outra categoria</option>
+            </select>
+          </article>
+          <div class="col">
+            <label class="form-label">Assunto</label>
+            <textarea class="form-control" id="" cols="30" rows="4"></textarea>
+          </div>
+          <button class="btn btn-block btn-danger mx-3 my-3">Clique e saiba mais</button>
+      </article>
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="/img/uarlen3.jpeg" alt="Uarlen1">
+          <img src="/img/vivi1.jpeg" class="d-block" alt="Primeiro Slide">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption">
+            <h1 class="text-left">Venha ser <span class="text-danger">Múltiplo</span> conosco!</h1>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="/img/uarlen4.jpeg" alt="Uarlen2">
+          <img src="/img/uarlen1.jpg" class="d-block" alt="Segundo Slide">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption d-none">
+            <h3>Título do segundo slide</h3>
+            <p>Descrição do segundo slide</p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="/img/uarlen5.jpg" alt="Uarlen3">
+          <img src="/img/vivi3-1.jpeg" class="d-block" alt="Terceiro Slide">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption d-none">
+            <h3>Título do terceiro slide</h3>
+            <p>Descrição do terceiro slide</p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="/img/uarlen6.jpeg" alt="Uarlen4">
+          <img src="/img/uarlen3.jpeg" class="d-block" alt="Quarto Slide">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption d-none">
+            <h3>Título do terceiro slide</h3>
+            <p>Descrição do terceiro slide</p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="/img/uarlen7.jpeg" alt="Viviane2">
+          <img src="/img/vivi4.jpeg" class="d-block" alt="Quinto Slide">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption d-none">
+            <h3>Título do terceiro slide</h3>
+            <p>Descrição do terceiro slide</p>
+          </div>
         </div>
         <div class="carousel-item">
-          <img src="/img/uarlen8.jpeg" alt="Viviane3">
+          <img src="/img/vivi2.jpeg" class="d-block" alt="Sexto Slide">
+          <div class="carousel-overlay"></div>
+          <div class="carousel-caption d-none">
+            <h3>Título do terceiro slide</h3>
+            <p>Descrição do terceiro slide</p>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="/img/vivi1.jpeg" alt="Viviane1">
-        </div>
-        <div class="carousel-item">
-          <img src="/img/vivi2.jpeg" alt="Viviane2">
-        </div>
-        <div class="carousel-item">
-          <img src="/img/vivi3.jpeg" alt="Viviane3">
-        </div>
+        <!-- Adicione mais div.carousel-item conforme o número de slides -->
       </div>
+      <!-- Controles do carrossel -->
       <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Anterior</span>
@@ -141,6 +195,13 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Próximo</span>
       </a>
+    </section>
+
+    <!--Histórico-->
+    <div class="d-none historico row">
+
+    </div>
+
 
     <!--Seção de tarefas-->
     <section class="border mb-3 tasks">
