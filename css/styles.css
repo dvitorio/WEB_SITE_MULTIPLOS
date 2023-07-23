@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+.manutencao h1{
+     font-size: 4rem;
+}
+
+.manutencao h3{
+     font-size: 2rem;
+}
+
 html {
      scroll-behavior: smooth;
 }
@@ -31,16 +39,16 @@ html {
 
 body {
      background-color: #f5f5f5;
-     min-width: 100vw !important;
+     width: 100vw !important;
 }
 
 header {
-     min-width: 100vw !important;
+     width: 100vw !important;
 }
 
 .container-geral {
      min-height: 100vh !important;
-     min-width: 100vw !important;
+     width: 100vw !important;
 }
 
 .navigation,
@@ -73,10 +81,26 @@ header {
      transition: .3s ease-in-out;
 }
 
-/* CSS para o carrossel */
+.novaPagina{
+     width: 100vw;
+     height: 100vh;
+}
+
+#myCarousel .carousel-item {
+     height: 720px; 
+     overflow: hidden;
+}
+ 
+
+#myCarousel .carousel-item img {
+     object-fit: cover;
+     height: 100%;
+     width: 100%;
+   }
+
+
 #myCarousel .carousel-item {
      max-height: 720px;
-     /* Defina a altura desejada para as fotos */
      overflow: hidden;
 }
 
@@ -85,31 +109,6 @@ header {
      height: 100%;
      width: 100%;
 }
-
-
-/*.firstPage{
-     align-items: center;
-     background-image: url('/img/fundo.jpg');
-     background-size: cover !important;
-     display: flex !important;
-     justify-content: center !important;
-     min-height: 90vh !important;
-     width: auto !important;
-}
-
-.firstPage img {
-     max-width: 100% !important;
-     max-height: auto !important;
-}
-
-.firstPageTitle h1 {
-     font-size: 3.5rem !important;
-     text-align: center !important;
-}
-
-.firstPageTitle span {
-     color: #ffa500;
-}*/
 
 .firstPageForm {
      position: absolute;
@@ -129,9 +128,9 @@ header {
 }
 
 .historico {
-     width: 100vw;
-     height: 100vh;
-     background-color: #f5f5f5;
+     width: 100vw !important;
+     min-height: 100vh;
+     background-color: #ffffff;
 }
 
 .historicoImagem{
@@ -142,10 +141,6 @@ header {
      background-size: cover;
 }
 
-.historicoImagem img{
-     max-width: fit-content;
-}
-
 .historicoTexto p{
      line-height: 35px !important;
 }
@@ -153,17 +148,17 @@ header {
 h5 {
      text-transform: uppercase;
 }
-*/
 
 .carousel {
      background-color: rgb(81, 83, 85) !important;
+     height: 100vh !important;
 }
 
 .carousel img{
      display: block;
      margin-left: auto;
      margin-right: auto;
-     max-height: 640px;
+     max-height: 640px !important;
 }
 
 .carousel-overlay {
@@ -172,7 +167,7 @@ h5 {
      left: 0;
      width: 100%;
      height: 100%;
-     background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade (0.6) conforme desejar */
+     background-color: rgba(0, 0, 0, 0.5); 
 }
 
 #myCarousel.carousel.slide {
@@ -190,10 +185,6 @@ h5 {
 
 .historicoBox{
      border-radius: 6px;
-}
-
-.historico{
-     background-color: white !important;
 }
 
 .historicoTexto{
@@ -277,6 +268,12 @@ h6 {
      font-size: 0.85rem
 }
 
+.modalGrupUsina{
+     width: 100vw;
+     height: 100vh;
+     background-color: #ffffff;
+}
+
 .clients {
      width: 100vw;
      height: 90vh;
@@ -305,48 +302,66 @@ h6 {
 
 
 
+@media (max-width: 767px) { 
+     .carousel-item img {
+       object-fit: cover;
+       height: 100vh; 
+       width: 100%;
+       zoom: 2;
+     }
+
+     .firstPageForm{
+          position: absolute;
+          width: 99vw;
+          min-height: 30rem;
+          backdrop-filter: blur(20px) !important;
+          border-radius: 10px !important;
+          border: 1px solid rgb(216, 204, 204) !important;
+          z-index: 3;
+     }
+}
 
 
-/*Responsividade*/
+
+/*Responsividade - Dispositivos até 560px*/
 @media screen and (max-width: 35rem) {
-
      .navbar-nav a,
      .navbar-nav button {
           margin-left: 0 !important;
      }
 
-     .firstPage {
-          flex-direction: column;
-     }
-
-     .firstPageCard {
-          width: 95vw;
-     }
-
-     .firstPageTitle {
-          width: 95vw;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-     }
-
      .firstPageForm {
+          backdrop-filter: blur(20px) !important;
+          border-radius: 10px !important;
+          border: 1px solid rgb(216, 204, 204) !important;
+          height: 35rem;
           margin: auto;
+          min-height: 30rem;
           padding: auto;
-          width: 95vw;
-     }
-
-     .firstPageTitle h1 {
-          text-align: center;
-          font-size: 2.5rem !important;
+          position: absolute;
+          width: 24rem;
+          z-index: 6;
      }
 
      .carousel {
-          height: 90vh;
+          height: 100vh !important;
      }
 
-     .carousel img {
-          height: 90%;
+     .carousel img{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          min-height: 100% !important;
+     }
+     
+     .tasks{
+          width: 100vw;
+          flex-direction: column;
+     }
+
+     .task{
+          width: 99vw;
+          margin: auto;
      }
 
      .directors {
@@ -370,23 +385,17 @@ h6 {
 
 
 @media screen and (min-width: 36rem) and (max-width: 50rem) {
-     .firstPageText h4 {
-          font-size: 1rem !important;
-     }
-
-     .firstPageTitle h1 {
-          text-align: center;
-          font-size: 2.5rem !important;
-     }
-
      .firstPageForm {
           margin: auto;
           padding: auto;
-          width: 95vw;
-     }
-
-     .firstPageCard {
-          width: 60vw;
+          height: 35rem;
+          position: absolute;
+          width: 24rem;
+          min-height: 30rem;
+          backdrop-filter: blur(20px) !important;
+          border-radius: 10px !important;
+          border: 1px solid rgb(216, 204, 204) !important;
+          z-index: 6;
      }
 
      .director {
@@ -400,33 +409,16 @@ h6 {
 
      .formulario {
           width: 99vw;
-     }
-
-     .firstPage {
-          min-height: 90vh;
-          padding-bottom: 30px;
      }
 }
 
 
 @media screen and (min-width: 51rem) and (max-width: 70rem) {
-     .firstPageText h4 {
-          font-size: 1rem !important;
-     }
-
-     .firstPageTitle h1 {
-          text-align: center;
-          font-size: 2.5rem !important;
-     }
-
-     .firstPageCard {
-          width: 50vw;
-     }
-
      .firstPageForm {
           margin: auto;
           padding: auto;
           width: 95vw;
+          min-height: 35rem;
      }
 
      .director {
@@ -440,10 +432,5 @@ h6 {
 
      .formulario {
           width: 99vw;
-     }
-
-     .firstPage {
-          min-height: 90vh;
-          padding-bottom: 30px;
      }
 }
