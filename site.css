@@ -134,6 +134,52 @@ html {scroll-behavior: smooth}
     background-position: center !important;
 }
 
+.maloka{
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: "20vw 39vw 39vw";
+    grid-template-areas: "malokaTitulo malokaTitulo malokaTitulo"
+                         "malokaTextos malokaCapa malokaCapa"
+                         "malokaImagem malokaCapa malokaCapa";
+    gap: 5px;
+}
+
+.malokaTitulo{
+    grid-area: malokaTitulo;
+    width: 99vw;
+    height: 2rem;
+}
+
+.malokaTextos{
+    grid-area: malokaTextos;
+    width: 20vw;
+    height: 40vh;
+}
+
+.malokaTextos p{
+    line-height: 35px;
+}
+
+.malokaImagem{
+    grid-area: malokaImagem;
+    width: 20vw;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.malokaCapa{
+    grid-area: malokaCapa;
+    width: 78vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.malokaCapa img{
+    max-width: 100%;
+}
+
 .card{
     border: none !important;
 }
@@ -153,7 +199,25 @@ html {scroll-behavior: smooth}
     line-height: 32px !important;
 }
 
+.secaoFormulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('/img/fundo.jpg');
+    background-size: cover;
+    width: 100vw;
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+.secaoFormulario img{
+    max-width: 100%;
+}
+
 .formulario{
+    backdrop-filter: blur(30px);
+    border: .5px solid grey;
     width: 60vw;
     min-height: 70vh;
 }
@@ -193,6 +257,18 @@ html {scroll-behavior: smooth}
     }
     .parceira{
         margin: 10px auto;
+        width: 100vw;
+    }
+
+    .maloka{
+        display: flex !important;
+        flex-direction: column !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .malokaCapa,
+    .malokaImagem,
+    .malokaTextos{
         width: 100vw;
     }
 
