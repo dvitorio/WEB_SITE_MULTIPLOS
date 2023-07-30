@@ -143,6 +143,44 @@ html{
   border-radius: 50%;
 }
 
+.caixa{
+  background-color: grey;
+  width: 100vw !important;
+  min-height: 100vh !important;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: "20vw 40vw 40vw";
+  grid-template-areas:   "grup1 grup2 grup2"
+                         "grup1 grup2 grup2"
+                         "grup1 grup3 grup3"
+                         "grup1 grup3 grup3";
+  gap: 10px;
+}
+
+.grup1{
+  grid-area: grup1;
+  width: 20vw;
+  min-height: auto !important;
+}
+
+.grup2 img,
+.grup3 img{
+  max-width: 50% !important;
+  max-height: auto !important;
+}
+
+.grup2{
+  grid-area: grup2;
+  width: 80vw;
+  min-height: 50vh;
+}
+
+.grup3{
+  grid-area: grup3;
+  width: 80vw;
+  min-height: 50vh;
+}
+
 .photoDirector img {
   border-radius: 50%;
   width: 100%;
@@ -151,7 +189,7 @@ html{
 .grupUsina{
   background-color: #ffffff;
   width: 100vw;
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
 .grupUsina p{
@@ -160,6 +198,11 @@ html{
 
 .carrosselGrupUsina{
   width: 75vw !important;
+  height: 75vh !important;
+}
+
+.carrosselGrupUsina img{
+  max-height: 720px !important;
 }
 
 .usina img{
@@ -254,6 +297,23 @@ html{
     display: block;
     width: 100vw !important;
     height: auto;
+  }
+
+  .caixa{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grup1,
+  .grup2,
+  .grup3{
+    width: 100vw;
+    flex-direction: column;
+  }
+
+  .grup2 img,
+  .grup3 img{
+    min-width: 100%;
   }
 
   .carrosselGrupUsina{
