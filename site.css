@@ -80,6 +80,9 @@ html {scroll-behavior: smooth}
     width: 100vw;
     min-height: 100vh;
     display: flex;
+    /*grid-template-rows: auto;
+    grid-template-columns: "especialistasTitulo especialistasTitulo especialistasTitulo"
+                           "";*/
     align-items: center;
     justify-content: center;
 }
@@ -95,8 +98,16 @@ html {scroll-behavior: smooth}
 }
 
 .especialistas:hover{
-    transform: scale(1.05);
-    transition: ease-in-out .3s;
+    transform: scale(1.05) !important;
+    transition: ease-in-out .3s !important;
+}
+
+.especialistas img:hover{
+    zoom: 1.25;
+}
+
+.especialistas p:hover{
+    color: orange !important;
 }
 
 .midias{
@@ -107,6 +118,50 @@ html {scroll-behavior: smooth}
 
 .midias i {
     font-size: 1.5rem;
+}
+
+.espacoViviane{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: "25vw 37vw 37vw";
+    grid-template-areas:   "viviTitulo viviTitulo viviTitulo"
+                           "viviFoto viviTextos viviTextos"
+                           "viviCarrossel viviCarrossel viviCarrossel";
+    gap: 5px;
+    width: 100vw;
+    height: auto;
+}
+
+.viviTitulo{
+    grid-area: viviTitulo;
+    width: 100vw;
+    height: 2rem;
+}
+
+.viviFoto{
+    grid-area: viviFoto;
+    width: 25vw;
+    height: auto;
+}
+
+.viviFoto img{
+    max-width: 100%;
+}
+
+.viviTextos{
+    grid-area: viviTextos;
+    width: 74vw;
+    min-height: 33vh;
+}
+
+.viviTextos p{
+    line-height: 35px;
+}
+
+.viviCarrossel{
+    grid-area: viviCarrossel;
+    width: 99vw;
+    min-height: 40vh;
 }
 
 .grupUsina{
@@ -155,24 +210,24 @@ html {scroll-behavior: smooth}
 .malokaTextos{
     grid-area: malokaTextos;
     width: 20vw;
-    height: 40vh;
+    min-height: 40vh;
 }
 
 .malokaTextos p{
-    line-height: 35px;
+    line-height: 27.5px;
 }
 
 .malokaImagem{
     grid-area: malokaImagem;
     width: 20vw;
-    height: 60vh;
+    min-height: 30vh;
     overflow: hidden;
 }
 
 .malokaCapa{
     grid-area: malokaCapa;
     width: 78vw;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
 }
 
@@ -222,6 +277,16 @@ html {scroll-behavior: smooth}
     min-height: 70vh;
 }
 
+.rodape{
+    width: 100vw;
+    min-height: 6rem;
+    background-color: black;
+}
+
+.rodape h6{
+    font-size: .8rem;
+}
+
 
 
 
@@ -252,29 +317,57 @@ html {scroll-behavior: smooth}
         margin: 5px;
         padding: 5px;
     }
-    .parceiras{
+    .parceiras,
+    .empresas{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         width: 100vw;
+    }
+    .card{
+        width: 250px;
+    }
+    .card img{
+        max-width: 80%;
+        margin: 20px auto !important;
     }
     .parceira{
         margin: 10px auto;
         width: 100vw;
     }
-
+    .espacoViviane{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .espacoViviane h4{
+        font-size: 1rem;
+    }
+    .viviFoto{
+        width: fit-content;
+    }
+    .viviTextos{
+        width: 100vw;
+        text-align: center;
+    }
+    .viviTextos p{
+        line-height: 28px;
+    }
     .maloka{
         display: flex !important;
         flex-direction: column !important;
         flex-wrap: nowrap !important;
     }
-
     .malokaCapa,
     .malokaImagem,
     .malokaTextos{
         width: 100vw;
     }
-
-    .formulario{
-        background-image: url('/img/');
-        width: 100%;
+    .formulario,
+    .secaoFormulario{
+        width: 100vw;
     }
 
 }
