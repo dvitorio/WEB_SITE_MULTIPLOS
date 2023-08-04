@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;800&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar{
+    background-color: #000000 !important;
+    z-index: 2 !important;
+}
+
+.paginaInicial{
+    width: 100vw;
+    height: 100vh;
+}
+
+.carousel-inner{
+    background: linear-gradient(to bottom, #000000, #d5cece);
+    height: 90vh !important;
+}
+
+.carousel-item img,
+.carousel-item{
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+}
+
+.paginaInicial h5{
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.quemSomos{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: "25vw 25vw 25vw";
+    grid-template-areas: "quemSomosTitulo quemSomosTitulo quemSomosTitulo"
+                         "uarlen mattos viviane"
+                         "uarlen mattos viviane"
+                         "uarlen mattos viviane"
+                         "ancoraQuemSomos ancoraQuemSomos ancoraQuemSomos";
+    gap: 5px;
+    width: 100vw;
+    min-height: 100vh !important;
+    font-size: .9rem;
+    line-height: 28px;
+}
+
+.quemSomosTitulo{
+    grid-area: quemSomosTitulo;
+    width: 100vw;
+    min-height: 2rem;
+}
+
+.uarlen{
+    border-radius: 6px !important;
+    grid-area: uarlen;
+    width: 25vw;
+    min-height: 75vh;
+}
+
+.mattos{
+    border-radius: 6px !important;
+    grid-area: mattos;
+    width: 25vw;
+    min-height: 75vh;
+}
+
+.viviane{
+    border-radius: 6px !important;
+    grid-area: viviane;
+    width: 25vw;
+    min-height: 75vh;
+}
+
+.especialistaFoto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 10rem;
+    height: 10rem;
+}
+
+.especialistaFoto img{
+    border-radius: 50%;
+}
+
+.ancoraQuemSomos{
+    grid-area: ancoraQuemSomos;
+    width: 100vw;
+    height: 2rem !important;
+}
+
+.midias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.midias i{
+    font-size: 1.3rem;
+}
+
+.midias i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: ease-in-out 0.4s;
+}
+
+.uarlen:hover{
+    box-shadow: 3px 6px 9px yellow;
+    transform: scale(1.05);
+    transition: ease-in-out 0.4s;
+}
+
+.mattos:hover{
+    box-shadow: 3px 6px 9px yellow;
+    transform: scale(1.05);
+    transition: ease-in-out 0.4s;
+}
+
+.viviane:hover{
+    box-shadow: 3px 6px 9px yellow;
+    transform: scale(1.05);
+    transition: ease-in-out 0.4s;
+}
+
+.servicos{
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: "30vw 30vw 30vw";
+    grid-template-areas: "servicosTitulo servicosTitulo servicosTitulo"
+                         "servicosSomosFazemos servicosOfertamos servicosEntregamos"
+                         "servicosSomosFazemos servicosOfertamos servicosEntregamos"
+                         "servicosSomosFazemos servicosOfertamos servicosEntregamos"
+                         "ancoraServicos ancoraServicos ancoraServicos";
+    gap: 5px;
+}
+
+.servicosTitulo{
+    grid-area: servicosTitulo;
+    width: 100vw;
+    min-height: 2rem;
+}
+
+.servicosSomosFazemos{
+    grid-area: servicosSomosFazemos;
+    width: 30vw;
+    min-height: 78vh;
+}
+
+.servicosOfertamos{
+    grid-area: servicosOfertamos;
+    width: 30vw;
+    min-height: 78vh;
+}
+
+.servicosEntregamos{
+    grid-area: servicosEntregamos;
+    width: 30vw;
+    min-height: 78vh;
+}
+
+.servicos p{
+    font-size: .85em;
+}
+
+.ancoraServicos{
+    grid-area: ancoraServicos;
+    width: 100vw;
+    min-height: 2rem;
+}
+
+.btnCallToAction{
+    width: 12rem;
+    padding: 10px 5px !important;
+    margin: 5px 0 !important;
+    border-radius: 15px !important;
+}
+
+.parceiras{
+    width: 100vw !important;
+    min-height: 100vh;
+}
+
+.empresas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none !important;
+    max-width: 100vw;
+}
+
+.parceiras p{
+    line-height: 32px !important;
+}
+
+.secaoFormulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url('/img/fundoForm.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.formulario{
+    padding-top: 5vh;
+    width: 35vw;
+    min-height: 80vh;
+    backdrop-filter: blur(15px);
+    border: 0.50px solid grey !important;
+}
+
+.formulario span{
+    text-shadow: 1px 1px 1px black;
+}
+
+.rodape{
+    width: 100vw;
+    min-height: 8rem;
+    background-color: black;
+}
+
+.rodape i:nth-child(1){
+    font-size: .8rem;
+}
+
+.midiasRodape i{
+    font-size: 1.25rem !important;
+}
+
+.midiasRodape i:hover{
+    color: orange !important;
+    cursor: pointer !important;
+    font-size: 1.30rem !important;
+}
+
+.rodape a{
+    color: orange !important;
+    text-decoration: none !important;
+}
+
+.rodape h6{
+    font-size: .8rem;
+    font-weight: normal !important;
+}
+
+
+
+
+
+
+
+
+/*Responsividade - dispositivos de até 35rem*/
+@media screen and (max-width: 35rem) {
+    .navbar-nav{
+        margin-top: 2rem !important;
+    }
+    .nav-link{
+        margin-left: 0 !important;
+    }
+    #btnContato {
+        margin-left: 0 !important;
+    }
+    .carousel-inner{
+        min-height: 95vh !important;
+    }
+    .carousel-inner img{
+        min-height: 95vh !important;
+        object-fit: cover !important;
+        object-position: center !important;
+    }
+    .carousel-item img{
+        overflow: hidden;
+        object-fit: cover;
+        object-position: center !important;
+        height: 70vh !important;
+    }
+    .quemSomos,
+    .servicos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto !important;
+    }
+    .uarlen,
+    .mattos,
+    .viviane,
+    .servicosOfertamos,
+    .servicosSomosFazemos,
+    .servicosEntregamos
+    {
+        width: 100vw;
+        margin: 0 5px 10px 0 !important;
+    }
+    .servicosTitulo{
+        height: auto;
+    }
+    .servicosTitulo h4{
+        font-size: 1.2em;
+    }
+
+    .empresas,
+    .parceiras,
+    .parceiraTexto{
+        width: 100vw !important;
+    }
+
+    .empresas img{
+        width: 100%;
+    }
+
+    .formulario{
+        width: 100vw;
+    }
+
+}

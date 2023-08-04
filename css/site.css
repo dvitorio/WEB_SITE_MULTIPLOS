@@ -76,20 +76,65 @@ html {scroll-behavior: smooth}
     line-height: 35px;
 }
 
-.caixaEspecialistas{
+.profissionais{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: "25vw 25vw 25vw";
+    grid-template-areas: "profissionalTitulo profissionalTitulo profissionalTitulo"
+                           "profissionalViviane profissionalMatos profissionalUarlen"
+                           "profissionalViviane profissionalMatos profissionalUarlen"
+                           "profissionalViviane profissionalMatos profissionalUarlen";
+    width: 100vw;
+    min-height: 100vh;
+    gap: 5px;
+}
+
+.profissionalTitulo{
+    grid-area: profissionalTitulo;
+    width: 100vw;
+    height: 2rem;
+}
+
+.profissionalViviane{
+    grid-area: profissionalViviane;
+    width: 25vw;
+    height: 80vh;
+}
+
+.viviFoto img{
+    max-width: 100%;
+}
+
+.profissionalMatos{
+    grid-area: profissionalMatos;
+    width: 25vw;
+    height: 80vh;
+}
+
+.profissionalUarlen{
+    grid-area: profissionalUarlen;
+    width: 25vw;
+    height: 80vh;
+}
+
+/*.caixaEspecialistas{
     width: 100vw;
     min-height: 100vh;
     display: flex;
-    /*grid-template-rows: auto;
-    grid-template-columns: "especialistasTitulo especialistasTitulo especialistasTitulo"
-                           "";*/
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap !important;
+}
+
+.especialistaTitulo{
+    display: flex;
+    align-self: center !important;
+    justify-self: center !important;
 }
 
 .especialistas{
-    width: 25rem;
-    min-height: 30rem;
+    width: 20rem;
+    min-height: 30rem !important;
 }
 
 .especialistas img{
@@ -108,7 +153,7 @@ html {scroll-behavior: smooth}
 
 .especialistas p:hover{
     color: orange !important;
-}
+}*/
 
 .midias{
     display: flex;
@@ -121,6 +166,7 @@ html {scroll-behavior: smooth}
 }
 
 .espacoViviane{
+    scroll-margin-top: 15rem;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: "25vw 37vw 37vw";
@@ -129,7 +175,7 @@ html {scroll-behavior: smooth}
                            "viviCarrossel viviCarrossel viviCarrossel";
     gap: 5px;
     width: 100vw;
-    height: auto;
+    min-height: 100vh !important;
 }
 
 .viviTitulo{
@@ -141,11 +187,12 @@ html {scroll-behavior: smooth}
 .viviFoto{
     grid-area: viviFoto;
     width: 25vw;
-    height: auto;
+    min-height: auto !important;
 }
 
 .viviFoto img{
     max-width: 100%;
+    max-height: 100%;
 }
 
 .viviTextos{
@@ -165,6 +212,7 @@ html {scroll-behavior: smooth}
 }
 
 .grupUsina{
+    scroll-margin-top: 6rem;
     width: 100vw;
     min-height: 100vh;
 }
@@ -190,6 +238,7 @@ html {scroll-behavior: smooth}
 }
 
 .maloka{
+    scroll-margin-top: 6rem;
     width: 100vw;
     min-height: 100vh;
     display: grid;
@@ -240,6 +289,7 @@ html {scroll-behavior: smooth}
 }
 
 .parceiras{
+    scroll-margin-top: 6rem;
     width: 100vw;
     min-height: 75vh;
 }
@@ -255,6 +305,7 @@ html {scroll-behavior: smooth}
 }
 
 .secaoFormulario{
+    scroll-margin-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -262,7 +313,7 @@ html {scroll-behavior: smooth}
     background-image: url('/img/fundo.jpg');
     background-size: cover;
     width: 100vw;
-    min-height: 80vh;
+    min-height: 85vh;
     overflow: hidden;
 }
 
@@ -279,12 +330,31 @@ html {scroll-behavior: smooth}
 
 .rodape{
     width: 100vw;
-    min-height: 6rem;
+    min-height: 8rem;
     background-color: black;
+}
+
+.rodape i:nth-child(1){
+    font-size: .8rem;
+}
+
+.midiasRodape i{
+    font-size: 1.25rem !important;
+}
+
+.midiasRodape i:hover{
+    color: orange !important;
+    cursor: pointer !important;
+    font-size: 1.30rem !important;
+}
+
+.rodape a{
+    text-decoration: none !important;
 }
 
 .rodape h6{
     font-size: .8rem;
+    font-weight: normal !important;
 }
 
 

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <!--CSS GLOBAL-->
-  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="/css/site.css">
   <!--FONTEAWESOME-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -63,7 +63,7 @@
             <a class="mx-3 nav-link text-secondary" href="#">Conheça nosso blog</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-warning mx-3 nav-link shadow text-white" id="btnNavegacao">Entre em contato</button>
+            <a class="btn btn-warning mx-3 nav-link shadow text-white" href="#secaoFormulario">Entre em contato</a>
           </li>
         </ul>
       </div>
@@ -150,11 +150,24 @@
         </div>
         <a class="mx-auto" href="#navegacao"><i class="fa-solid fa-house text-warning"></i></a>
       </div>
+    </div>
 
+    <!--Seção de Especialistas-->
+    <div class="container profissionais">
+      <div class="border profisionalTitulo"><h4 class="text-center text-warning">NOSSOS ESPECIALISTAS</h4></div>
+      <div class="border profissionalViviane">
+        <div class="viviFoto">
+          <img class="d-block img mx-auto w-100" src="/img/vivi.jpeg" alt="">
+        </div>
+      </div>
+      <div class="border profissionalMatos">
+        <img class="d-block img mx-auto w-100" src="/img/matos2.jpg" alt="">
+      </div>
+      <div class="border profissionalUarlen"></div>
     </div>
 
     <!--Seção Equipe-->
-    <div class="border container caixaEspecialistas my-5" id="caixaEspecialistas" data-aos="zoom-in-up" data-aos-duration="2000">
+    <div class="border caixaEspecialistas my-5" id="caixaEspecialistas" data-aos="zoom-in-up" data-aos-duration="2000">
       <div class="especialistaTitulo">
         <h4 class="text-warning">NOSSOS ESPECIALISTAS</h4>
       </div>
@@ -165,7 +178,7 @@
         <p class="my-3 text-justify text-secondary" data-aos="fade-up" data-aos-duration="2000">
           Profissional com bacharelado em Artes Cênicas e Licenciado em História. É artista de teatro, escritor e um dos
           administradores do Instituto Múltiplos desde sua criação. Possui cerca de 12 espetáculos encenado (2018) e E
-          seus meus pais soubessem? (2022).
+          seus meus pais soubessem? (2022). Coordenador de oficinas de escrita, teatro, projetos culturais e mentoria em escrita.
         </p>
         <div class="midias">
           <i class="fa-brands fa-twitter text-justify text-warning mx-3"></i>
@@ -208,15 +221,15 @@
     </div>
 
     <!--espacoVivianeSilva-->
-    <div class="espacoViviane my-5" id="espacoViviane" data-aos="zoom-in-up" data-aos-duration="2000">
-      <div class="viviTitulo">
+    <div class="espacoViviane" id="espacoViviane" data-aos="zoom-in-up" data-aos-duration="2000">
+      <div class="border viviTitulo">
         <h4 class="text-center text-warning mx-auto" data-aos="zoom-in-up" data-aos-duration="2000">ESPAÇO MOTIVACIONAL VIVIANE SILVA</h4>
       </div>
-      <div class="viviFoto">
+      <div class="border viviFoto">
         <img class="d-block img w-100 mx-auto" src="/img/vivi7.jpg" alt="">
       </div>
-      <div class="viviTextos">
-        <h5 class="my-3 px-3 text-warning" data-aos="zoom-in-up" data-aos-duration="2000">Descubra o Poder de Alcançar Seus Objetivos e Superar Limites!</h5>
+      <div class="border viviTextos">
+        <h5 class="mt-3 px-3 text-warning" data-aos="zoom-in-up" data-aos-duration="2000">Descubra o Poder de Alcançar Seus Objetivos e Superar Limites!</h5>
         <p class="px-3 text-justify text-secondary" data-aos="zoom-in-up" data-aos-duration="2000">
           Se você busca uma mudança significativa em sua vida, quer alcançar metas audaciosas ou superar obstáculos que
           parecem intransponíveis, você está no lugar certo. Aqui, no nosso serviço de Coach e Mentoria, nós acreditamos
@@ -410,13 +423,19 @@
           </div>
         </article>
         <section class="row">
-          <div class="col-xl-6 mb-3">
+          <div class="col-xl-8 mb-3">
             <label class="form-label mb-2 text-white" for="">E-mail</label>
             <input class="form-control" type="email">
           </div>
-          <div class="col-xl-6 mb-3">
+          <div class="col-xl-4 mb-3">
             <label class="form-label mb-2 text-white" for="">Ocupação</label>
-            <input class="form-control" type="email">
+            <select class="form-control" name="" id="">
+              <option value="" disabled></option>
+              <option value="">Estudante</option>
+              <option value="">Profissional das artes</option>
+              <option value="">Professor</option>
+              <option value="">Outra ocupação</option>
+            </select>
           </div>
         </section>
         <section class="row">
@@ -431,11 +450,18 @@
     </div>
 
     <!--Seção do rodapé-->
-    <div class="rodape">
-      <h6 class="pt-3 text-center text-white">Todos os direitos reservados - &copy; 2023</h6>
-      <h6 class="text-center text-white">Desenvolvidos por <a href="">Daniel Vitorio</a></h6>
-      <h6 class="text-center text-white"><i class="fa-solid fa-location-dot"></i></h6>
-    </div>
+    <footer class="p-3 rodape">
+      <h6 class="p-2 text-center text-white"><i class="fa-regular fa-copyright"></i> Todos os direitos reservados - 2023</h6>
+        <h6 class="text-center text-white">Siga o Instituto Múltiplos nas redes sociais</h6>    
+        <div class="container midiasRodape text-center text-white mt-3 mb-2 mx-auto">
+          <i class="fa-brands fa-youtube text-center text-white mx-3"></i>
+          <i class="fa-brands fa-twitter text-center text-white mx-3"></i>
+          <i class="fa-brands fa-instagram text-center text-white mx-3"></i>
+        </div>
+        <h6 class="d-flex mx-auto"><a class="text-center text-white mx-auto" target="_blank" href="https://www.google.com/maps/place/Edf.+Guimar%C3%A3es+Trade/data=!4m7!3m6!1s0x7161be176679321:0xb2a7c02175661a2!8m2!3d-12.9807628!4d-38.4557651!16s%2Fg%2F11s2ndym1t!19sChIJIZNnduEbFgcRomFWFwJ8Kgs?authuser=0&hl=pt-BR&rclk=1">Av. Tancredo Neves, nº 1189, Ed. Guimarães Trade, sala 1603, Caminho das
+          Árvores, CEP 41820-020 – Salvador/BA</a></h6>
+      <h6 class="px-2 text-center text-white">Desenvolvidos por <a href=""><i class="fa-brands fa-github"></i> Daniel Vitorio</a></h6>
+    </footer>
 
   </div>
 

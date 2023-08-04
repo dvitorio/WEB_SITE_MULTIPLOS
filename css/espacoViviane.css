@@ -1,0 +1,139 @@
+html{
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.containerViviane{
+    width: 100vw;
+    height: auto;
+}
+
+.banner{
+    width: 100vw;
+    overflow: hidden;
+    height: 85vh;
+}
+
+.banner img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.bannerTexto {
+    position: absolute;
+    top: 15rem;
+    left: 15rem;
+}
+
+.bannerTexto h1{
+    text-align: center;
+}
+
+.quemSou{
+    scroll-margin-top: 4rem !important;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: "30vw 30vw 30vw";
+    grid-template-areas: "quemSouTitulo quemSouTitulo quemSouTitulo"
+                           "quemSouFoto quemSouFrase1 quemSouFrase1"
+                           "quemSouFoto quemSouFrase2 quemSouFrase2"
+                           ;
+    gap: 5px;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+.quemSouTitulo{
+    grid-area: quemSouTitulo;
+    min-height: 1.5rem;
+    width: 100vw;
+}
+
+.quemSouFoto{
+    grid-area: quemSouFoto;
+    height: 25vh;
+    width: 25vw;
+}
+
+.quemSouFoto img{
+    border-radius: 50%;
+}
+
+.quemSou p{
+    line-height: 1.88rem;
+}
+
+.quemSouFrase1{
+    grid-area: quemSouFrase1;
+    width: 70vw;
+    min-height: 12vh;
+}
+
+.quemSouFrase2{
+    grid-area: quemSouFrase2;
+    width: 70vw;
+    min-height: 12vh;
+}
+
+
+
+@media screen and (max-width: 32rem) {
+    .navbar h4{
+        text-align: center;
+    }
+    .nav-link {
+        text-align: justify !important;
+    }
+    .banner img{
+        background-position: center;
+        object-fit: cover;
+        min-height: 70vh;
+    }
+    .bannerTexto{
+        position: absolute;
+        top: 15rem;
+        left: 0;
+    }
+    .bannerTexto h1{
+        text-shadow: 1px 1px 1px #000000;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .quemSou{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .quemSou h4{
+        text-align: center;
+    }
+    .quemSou p{
+        text-align: justify;
+        font-size: .9rem;
+        line-height: 1.88rem;
+        padding: 0 0.625rem;
+    }
+    .quemSouFoto,
+    .quemSouFrase1,
+    .quemSouFrase2,
+    .quemSouFrase3,
+    .quemSouFrase4{
+        width: 100vw;
+    }
+    .quemSouFoto{
+        height: 60vh;
+    }
+    .quemSouFoto img{
+        min-height: 100%;
+    }
+}
