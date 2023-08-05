@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{scroll-behavior: smooth}
+
+.midias{
+    display: flex;
+}
+
+.midias i{
+    font-size: 1.3rem;
+}
+
+.logo .navbar{
+    background-color: white !important;
+}
+
+.containerCapa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 95vh;
+}
+
+.capaImagem{
+    width: 50vw;
+}
+
+.capaImagem img{
+    max-width: 100%;
+}
+
