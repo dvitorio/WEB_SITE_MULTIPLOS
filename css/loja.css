@@ -7,33 +7,181 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-html{scroll-behavior: smooth}
-
-.midias{
-    display: flex;
+.geral{
+    width: 100vw !important;
+    min-height: 100vh !important;
 }
 
-.midias i{
-    font-size: 1.3rem;
-}
-
-.logo .navbar{
-    background-color: white !important;
-}
-
-.containerCapa{
+.centerRow{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+.centerColumn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column !important;
+}
+
+html{scroll-behavior: smooth}
+
+.navbar,
+.navegacao{
+    min-height: 5rem;
+}
+
+#btnContato{
+    background-color: orange;
+}
+
+.livros{
     width: 100vw;
-    height: 95vh;
+    min-height: 100vh;
 }
 
-.capaImagem{
-    width: 50vw;
+.livro{
+    width: 90vw;
+    min-height: 100vh !important;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: "45vw 55vw";
+    grid-template-areas: "livroTitulo livroTitulo"
+                         "livroImagem livroDescricao"
+                         "livroimagem livroDescricao"
+                         "livroAncora livroAncora";
 }
 
-.capaImagem img{
-    max-width: 100%;
+.livroTitulo{
+    grid-area: livroTitulo;
+    width: 100vw;
+    height: 2rem;
 }
 
+.livroImagem{
+    grid-area: livroImagem;
+    width: 40vw;
+    max-height: 85vh;
+}
+
+.livroImagem img{
+    width: auto;
+    max-height: 100%;
+}
+
+.livroDescricao{
+    grid-area: livroDescricao;
+    width: 45vw;
+    height: 85vh;
+}
+
+.livroDescricao p{
+    font-size: 0.9rem;
+    line-height: 2.25rem;
+}
+
+.livroAncora{
+    grid-area: livroAncora;
+    width: 100vw;
+    height: 2rem;
+}
+
+.bannerPrincipal{
+    width: 90vw;
+    min-height: 100vh;
+}
+
+.bannerTexto{
+    width: 30vw;
+    min-height: 15vh;
+}
+
+.bannerTexto p{
+    min-width: 30vw;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.bannerLogo{
+    width: auto;
+    height: 20vh;
+}
+
+.cursos{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.mentoria p{
+    font-size: .9rem;
+}
+
+.rodape{
+    width: 100vw;
+    min-height: 7rem;
+    background-color: #000000;
+}
+
+.rodapeIcones i{
+    font-size: 1.2rem;
+}
+
+.rodapeTextos h6{
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+
+
+@media screen and (max-width: 45rem) {
+    .nav-item a{
+        margin: 5px 0 !important;
+    }
+    .livros{
+        height: auto;
+    }
+    .livro{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .livroDescricao{
+        width: 100vw;
+    }
+    .livroDescricao p{
+        font-size: 0.85rem;
+        line-height: 1.5rem;
+    }
+    .livroImagem{
+        width: 100vw;
+        background-position: center !important;
+        background-size: contain !important;
+        overflow: hidden !important;
+    }
+    .livroImagem img{
+        width: 100% !important;
+        min-height: 100% !important;
+    }
+    .bannerTexto{
+        width: 100vw;
+        height: auto;
+    }
+    .bannerTexto h1{
+        font-size: 2rem;
+    }
+    .bannerTexto p{
+        font-size: 1rem;
+        line-height: 1.75rem;
+    }
+    .bannerLogo{
+        width: 100vw;
+        height: auto;
+    }
+    .bannerLogo img{
+        max-width: 100%;
+    }
+
+
+}

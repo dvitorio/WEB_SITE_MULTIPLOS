@@ -30,7 +30,6 @@ html{scroll-behavior: smooth}
 }
 
 .carousel-inner{
-    background: linear-gradient(to bottom, #000000, #d5cece);
     height: 90vh !important;
 }
 
@@ -142,8 +141,6 @@ html{scroll-behavior: smooth}
     grid-template-rows: auto;
     grid-template-columns: "30vw 30vw 30vw";
     grid-template-areas: "servicosTitulo servicosTitulo servicosTitulo"
-                         "servicosSomosFazemos servicosOfertamos servicosEntregamos"
-                         "servicosSomosFazemos servicosOfertamos servicosEntregamos"
                          "servicosSomosFazemos servicosOfertamos servicosEntregamos"
                          "ancoraServicos ancoraServicos ancoraServicos";
     gap: 5px;
