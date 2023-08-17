@@ -59,6 +59,10 @@ html{
   height: 60vh;
 }
 
+.historicoBanner p{
+  font-size: 0.8rem;
+}
+
 .historicoTextos{
   grid-area: historicoTextos;
   width: 50vw;
@@ -70,12 +74,20 @@ html{
   line-height: 2rem;
 }
 
+.secaoRodape{
+  width: 100vw;
+  min-height: 8rem !important;
+  background-color: #000000;
+}
 
 
 
 
 /*Resolução para dispositivos de até 30rem*/
 @media screen and (max-width: 40rem) {
+  .bannerInicialTexto h1{
+    font-size: 1.5rem;
+  }
   .bannerInicial img{
     max-width: 100%;
   }
@@ -87,10 +99,24 @@ html{
     width: 100vw;
     height: auto;
   }
+
+  .historicoTextos h5,
+  .historicoTitulo h4{
+    text-align: center !important;
+  }
+
   .historicoBanner,
   .historicoTextos{
-    width: 100vw;
+    width: 99vw;
     height: auto;
+    padding: 0.3125rem !important;
+  }
+  .historicoBanner p{
+    font-size: 0.875rem !important;
+  }
+  .historicoTextos p{
+    font-size: 0.8rem;
+    line-height: 1.75rem;
   }
   
 }

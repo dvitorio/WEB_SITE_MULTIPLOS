@@ -17,6 +17,10 @@ html{
     height: auto;
 }
 
+.navbar{
+    min-height: auto !important;
+}
+
 .banner{
     width: 100vw;
     overflow: hidden;
@@ -91,6 +95,33 @@ html{
     min-height: 10vh;
 }
 
+.chamada{
+    background-color: rgb(215, 233, 230);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 70vh;
+}
+
+.chamada h4{
+    color: #21652a !important;
+}
+
+.chamada i{
+    color: olivedrab !important;
+    font-size: 3rem;
+}
+
+.chamada a{
+    border: none;
+    background-color: olivedrab;
+    width: 14rem !important; 
+    padding: 0.8rem !important;
+    border-radius: 10px;
+}
+
 .secaoDepoimentos{
     display: flex;
     align-items: center;
@@ -106,14 +137,13 @@ html{
     height: auto;
 }
 
-.rodape{
-    display: flex;
+.secaoRodape{
     align-items: center;
+    background-color: rgb(33, 32, 32);
+    display: flex;
     justify-content: center;
-    flex-direction: column;
+    min-height: 8rem;
     width: 100vw;
-    height: 5rem;
-    background-color: #000000;
 }
 
 .rodape h6{font-size: 0.75rem}
@@ -121,6 +151,9 @@ html{
 
 
 @media screen and (max-width: 32rem) {
+    .navegacao{
+        height: auto !important;
+    }
     .navbar h4{
         text-align: center;
     }
@@ -133,9 +166,7 @@ html{
         min-height: 70vh;
     }
     .bannerTexto{
-        position: absolute;
-        top: 15rem;
-        left: 0;
+        position: relative;
     }
     .bannerTexto h1{
         text-shadow: 1px 1px 1px #000000;
@@ -150,6 +181,7 @@ html{
     }
     .quemSou h4{
         text-align: center;
+        font-size: 1.25rem;
     }
     .quemSou p{
         text-align: justify;
@@ -165,11 +197,21 @@ html{
         width: 100vw;
     }
     .quemSouFoto{
-        height: 60vh;
+        width: 70vw !important;
+        height: auto !important;
     }
     .quemSouFoto img{
         min-height: 100%;
     }
+    .chamada h4{
+        font-size: 1.25rem;
+        padding: 0.8rem auto;
+    }
+
+    .chamada i{
+        margin: 0.4rem;
+    }
+
     .depoimentos,
     .card{
         display: flex;
