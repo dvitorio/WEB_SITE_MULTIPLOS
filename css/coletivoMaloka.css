@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.coletivoMaloka{
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.navbar{
+    border: 1px solid transparent !important;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.bannerInicialMaloka{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 85vh;
+    width: 100vw;
+}
+
+.bannerImagem{
+    height: 70vh;
+    width: 60vw;
+}
+
+.bannerTexto{
+    height: 70vh;
+    width: 40vw;
+}
+
+.bannerTexto h1{font-size: 4rem}
+
+.bannerTexto h5{
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.secaoHistorico{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: "50vw 50vw";
+    grid-template-areas: "historicoTitulo historicoTitulo"
+                         "historicoTextos historicoTextos"
+                         "historicoImagem historicoImagem";
+    gap: 5px;
+    height: auto !important;
+}
+
+.historicoTitulo{
+    grid-area: historicoTitulo;
+    height: auto;
+    width: 100vw;
+}
+
+.historicoTitulo h2{
+    color: #FFD700;
+}
+
+.historicoTextos{
+    grid-area: historicoTextos;
+    min-height: auto;
+    width: 80vw;
+}
+
+.historicoTextos p{
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 2.5rem;
+}
+
+.historicoImagem{
+    grid-area: historicoImagem;
+    height: auto !important;
+    width: 50vw;
+}
+
+.historicoImagem h6{
+    font-weight: 300;
+    font-size: 0.85rem;
+}
+
+.historicoImagem img{
+    width: 100%;
+}
+
+.secaoRodape{
+    align-items: center;
+    background-color: rgb(33, 32, 32);
+    display: flex;
+    justify-content: center;
+    min-height: 8rem;
+    width: 100vw;
+}
+
+.rodapeEsquerdo, 
+.rodapeDireito{
+    min-height: 4rem;
+    width: 30vw;
+}
+
+.secaoRodape h6{
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.midias i{font-size: 1.5rem}
+
+.midias i:hover{
+    color: #d8ba0e !important;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+
+
+
+/*Resolução de telas com até 640px ou 40 rem*/
+@media screen and (max-width: 40rem) {
+    h2{font-size: 1.75rem}
+    
+    p{
+        font-size: 0.9rem;
+        line-height: 2rem !important;
+    }
+    .nav-link{
+        margin-left: 0 !important;
+    }
+    .bannerInicialMaloka,
+    .bannerTexto,
+    .bannerImagem{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        margin: 5px 10px;
+        width: 100vw;
+    }
+    .bannerTexto h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .bannerTexto h5{
+        font-size: 0.9rem;
+        font-weight: 200;
+        letter-spacing: 2px;
+    }
+    .secaoHistorico{
+        width: 100vw;
+        height: auto !important;
+    }
+    .historicoTitulo{
+        width: 100vw !important;
+        height: auto !important;
+    }
+    .historicoImagem{
+        width: 100vw;
+        height: auto !important;
+    }
+    .historicoImagem img{
+        max-width: 100% !important;
+        height: auto;
+    }
+    .historicoTextos{
+        width: 100vw;
+        height: auto !important;
+    }
+
+}
