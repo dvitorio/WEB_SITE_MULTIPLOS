@@ -74,10 +74,82 @@ html{
   line-height: 2rem;
 }
 
+.secaoAtores{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: "atoresTitulo atoresTitulo atoresTitulo"
+                        "ator1 ator2 ator3";
+  grid-template-columns: "30vw 30vw 30vw";
+  width: 100vw;
+  min-height: 90vh;
+}
+
+.atoresTitulo{
+  grid-area: atoresTitulo;
+  width: 100vw;
+  max-height: 2rem;
+}
+
+.card-body i{
+  font-size: 1.5rem !important;
+}
+
+.ator1{
+  grid-area: ator1;
+  width: 20rem;
+  min-height: 60vh;
+}
+
+.ator2{
+  grid-area: ator2;
+  width: 20rem;
+  min-height: 60vh;
+}
+
+.ator3{
+  grid-area: ator3;
+  width: 20rem;
+  min-height: 60vh;
+}
+
+.secaoApresentacoes{
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.apresentacao{
+  width: 45vw;
+  min-height: 50vh;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.apresentacao img{
+  max-width: 90%;
+}
+
+.apresentacaoDescricao{
+  width: auto !important;
+}
+
+.apresentacao p{
+  font-size: 0.9rem;
+  line-height: 2rem;
+}
+
 .secaoRodape{
   width: 100vw;
   min-height: 8rem !important;
   background-color: #000000;
+}
+
+.secaoRodape i{
+  font-size: 1.75rem;
+}
+
+.secaoRodape a,
+.secaoRodape h6{
+  font-size: 0.75rem;
 }
 
 
@@ -117,6 +189,26 @@ html{
   .historicoTextos p{
     font-size: 0.8rem;
     line-height: 1.75rem;
+  }
+  .apresentacao{
+    width: 100vw;
+    margin: 0.3875rem auto;
+  }
+  .apresentacao h5{
+    font-size: 1rem;
+  }
+  .apresentacao p{
+    font-size: 0.75rem;
+    line-height: 1.8rem;
+  }
+  .secaoAtores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .secaoAtores p{
+    font-size: 0.8rem;
   }
   
 }
